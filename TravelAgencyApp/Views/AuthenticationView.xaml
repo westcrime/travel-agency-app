@@ -1,0 +1,92 @@
+<ContentPage
+    x:Class="TravelAgencyApp.Views.AuthenticationView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="{DynamicResource SecondaryColor}"
+    NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="italy.jpg"
+                Aspect="AspectFill"/>
+
+            <Grid
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+
+                    <Border
+                        StrokeThickness="0"
+                        Grid.Row="0"
+                        Margin="25,250,25,150"
+                        BackgroundColor="White">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="25" />
+                        </Border.StrokeShape>
+                        <Grid
+                            Padding="20,20,20,20"
+                            HorizontalOptions="FillAndExpand"
+                            RowSpacing="20"
+                            VerticalOptions="FillAndExpand">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                        <Label
+                            Grid.Row="0"
+                            FontAttributes="Bold"
+                            FontSize="24"
+                            HorizontalOptions="CenterAndExpand"
+                            Text="Welcome to travel app!"
+                            TextColor="Black" />
+                        <Label
+                            Grid.Row="1"
+                            HorizontalOptions="CenterAndExpand"
+                            Text="Login in to account"
+                            TextColor="Black" />
+                        <Entry
+                            Grid.Row="2"
+                            HorizontalOptions="FillAndExpand"
+                            TextColor="Black"
+                            Placeholder="Username"
+                            Text="{Binding UserName}"
+                            VerticalOptions="FillAndExpand" />
+                        <Entry
+                            Grid.Row="3"
+                            HorizontalOptions="FillAndExpand"
+                            TextColor="Black"
+                            IsPassword="True"
+                            Placeholder="Password"
+                            Text="{Binding UserPassword}"
+                            VerticalOptions="FillAndExpand" />
+                        <Button
+                            Grid.Row="4"
+                            BackgroundColor="LightSeaGreen"
+                            TextColor="White"
+                            Command="{Binding LoginBtn}"
+                            CornerRadius="20"
+                            Text="Login" />
+                        <Button
+                            Grid.Row="5"
+                            BackgroundColor="LightSeaGreen"
+                            TextColor="White"
+                            Command="{Binding RegisterBtn}"
+                            CornerRadius="20"
+                            Text="Register" />
+                    </Grid>
+                </Border>
+            </Grid>
+        </Grid>
+        
+    </ContentPage.Content>
+
+
+</ContentPage>
