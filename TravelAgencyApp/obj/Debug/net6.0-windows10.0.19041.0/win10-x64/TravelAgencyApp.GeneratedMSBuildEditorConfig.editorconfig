@@ -46,8 +46,8 @@ build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.Main
 build_metadata.AdditionalFiles.TargetPath = Views\MainMenuView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\MainMenuView.xaml
 
-[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Views/RegisterView.xaml]
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Views/RegisterPageView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.RegisterView.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\RegisterView.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\RegisterView.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.RegisterPageView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegisterPageView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegisterPageView.xaml

@@ -252,7 +252,6 @@ C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-w
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\hostfxr.dll
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\hostpolicy.dll
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordaccore.dll
-C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_6.0.1523.11507.dll
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordbi.dll
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\mscorrc.dll
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\msquic.dll
@@ -359,3 +358,4 @@ C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-w
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\italy.scale-100.jpg
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_6.0.1623.17311.dll

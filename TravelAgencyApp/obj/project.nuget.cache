@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "i/kdj5Va/9Ob5NJclYEuEzK5y5YtmuRy6MEKTV9ywQerKfNIlvlXZz2o4o/VFjge4H7+gXqio5J5J2dGbU1VFg==",
+  "dgSpecHash": "OCovIYiiDnX5IH4Wu7P49YRDphd9aatlxmiLkt9YxupOEcFe2ZYkk1nEAm9rHNlpc26+YgkxKlowfa4na6mnzA==",
   "success": true,
   "projectFilePath": "C:\\Users\\westcrime\\course_2\\travel-agency-app\\TravelAgencyApp\\TravelAgencyApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\westcrime\\.nuget\\packages\\firebaseauthentication.net\\4.0.2\\firebaseauthentication.net.4.0.2.nupkg.sha512",
     "C:\\Users\\westcrime\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
@@ -20,6 +21,7 @@
     "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\6.0.501\\microsoft.maui.graphics.win2d.winui.desktop.6.0.501.nupkg.sha512",
     "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22000.194\\microsoft.windows.sdk.buildtools.10.0.22000.194.nupkg.sha512",
     "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.windowsappsdk\\1.1.5\\microsoft.windowsappsdk.1.1.5.nupkg.sha512",
+    "C:\\Users\\westcrime\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\westcrime\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\westcrime\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\westcrime\\.nuget\\packages\\system.runtime.interopservices.nfloat.internal\\6.0.1\\system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
@@ -104,13 +106,17 @@
     "C:\\Users\\westcrime\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.6.20.1\\xamarin.kotlin.stdlib.jdk8.1.6.20.1.nupkg.sha512",
     "C:\\Users\\westcrime\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.6.0.1\\xamarin.kotlinx.coroutines.android.1.6.0.1.nupkg.sha512",
     "C:\\Users\\westcrime\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.6.0.1\\xamarin.kotlinx.coroutines.core.jvm.1.6.0.1.nupkg.sha512",
-    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm\\6.0.15\\microsoft.aspnetcore.app.runtime.linux-arm.6.0.15.nupkg.sha512",
-    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm64\\6.0.15\\microsoft.aspnetcore.app.runtime.linux-arm64.6.0.15.nupkg.sha512",
-    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\6.0.15\\microsoft.aspnetcore.app.runtime.linux-x64.6.0.15.nupkg.sha512",
+    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm\\6.0.16\\microsoft.aspnetcore.app.runtime.linux-arm.6.0.16.nupkg.sha512",
+    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm64\\6.0.16\\microsoft.aspnetcore.app.runtime.linux-arm64.6.0.16.nupkg.sha512",
+    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\6.0.16\\microsoft.aspnetcore.app.runtime.linux-x64.6.0.16.nupkg.sha512",
+    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.ios.ref\\16.2.34\\microsoft.ios.ref.16.2.34.nupkg.sha512",
+    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.ios.runtime.iossimulator-x64\\16.2.34\\microsoft.ios.runtime.iossimulator-x64.16.2.34.nupkg.sha512",
+    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.maccatalyst.runtime.maccatalyst-x64\\16.2.34\\microsoft.maccatalyst.runtime.maccatalyst-x64.16.2.34.nupkg.sha512",
+    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.maccatalyst.ref\\16.2.34\\microsoft.maccatalyst.ref.16.2.34.nupkg.sha512",
     "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.28\\microsoft.windows.sdk.net.ref.10.0.19041.28.nupkg.sha512",
-    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.15\\microsoft.aspnetcore.app.runtime.win-x64.6.0.15.nupkg.sha512",
-    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.15\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.15.nupkg.sha512",
-    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.15\\microsoft.netcore.app.runtime.win-x64.6.0.15.nupkg.sha512"
+    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.16\\microsoft.aspnetcore.app.runtime.win-x64.6.0.16.nupkg.sha512",
+    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.16\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.16.nupkg.sha512",
+    "C:\\Users\\westcrime\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.16\\microsoft.netcore.app.runtime.win-x64.6.0.16.nupkg.sha512"
   ],
   "logs": []
 }

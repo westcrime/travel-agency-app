@@ -13,33 +13,33 @@
             <Grid
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
 
-
-                    <Border
+                <Border
+                        x:Name="border"
                         StrokeThickness="0"
                         Grid.Row="0"
                         Margin="25,250,25,150"
                         BackgroundColor="White">
-                        <Border.StrokeShape>
-                            <RoundRectangle CornerRadius="25" />
-                        </Border.StrokeShape>
-                        <Grid
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="25" />
+                    </Border.StrokeShape>
+                    <Grid
                             Padding="20,20,20,20"
                             HorizontalOptions="FillAndExpand"
                             RowSpacing="20"
                             VerticalOptions="FillAndExpand">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                            </Grid.RowDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
                         <Label
                             Grid.Row="0"
                             FontAttributes="Bold"
@@ -85,8 +85,7 @@
                 </Border>
             </Grid>
         </Grid>
-        
-    </ContentPage.Content>
 
+    </ContentPage.Content>
 
 </ContentPage>

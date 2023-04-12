@@ -49,14 +49,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Views\AuthenticationView.xaml.cs">
-	    <DependentUpon>AuthenticationView.xaml</DependentUpon>
-	  </Compile>
+	  <PackageReference Include="FirebaseAuthentication.net" Version="4.0.2" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Compile Update="Views\MainMenuView.xaml.cs">
 	    <DependentUpon>MainMenuView.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Views\RegisterView.xaml.cs">
-	    <DependentUpon>RegisterView.xaml</DependentUpon>
+	  <Compile Update="Views\RegisterPageView.xaml.cs">
+	    <DependentUpon>RegisterPageView.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -67,7 +69,7 @@
 	  <MauiXaml Update="Views\MainMenuView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\RegisterView.xaml">
+	  <MauiXaml Update="Views\RegisterPageView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
