@@ -61,9 +61,13 @@
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "dependencies": {
+            "FireSharp": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
             "FirebaseAuthentication.net": {
               "target": "Package",
-              "version": "[4.0.2, )"
+              "version": "[3.7.2, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
@@ -127,9 +131,13 @@
         "net6.0-ios16.1": {
           "targetAlias": "net6.0-ios",
           "dependencies": {
+            "FireSharp": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
             "FirebaseAuthentication.net": {
               "target": "Package",
-              "version": "[4.0.2, )"
+              "version": "[3.7.2, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
@@ -194,9 +202,13 @@
         "net6.0-maccatalyst16.1": {
           "targetAlias": "net6.0-maccatalyst",
           "dependencies": {
+            "FireSharp": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
             "FirebaseAuthentication.net": {
               "target": "Package",
-              "version": "[4.0.2, )"
+              "version": "[3.7.2, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
@@ -262,9 +274,13 @@
         "net6.0-windows10.0.19041": {
           "targetAlias": "net6.0-windows10.0.19041.0",
           "dependencies": {
+            "FireSharp": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
             "FirebaseAuthentication.net": {
               "target": "Package",
-              "version": "[4.0.2, )"
+              "version": "[3.7.2, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",

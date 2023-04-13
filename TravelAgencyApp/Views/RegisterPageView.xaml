@@ -51,13 +51,19 @@
                             Text="Enter your email and password"
                             TextColor="Black" />
                         <Entry
+                            IsTextPredictionEnabled = "False"
+                            IsSpellCheckEnabled="false"
+                            ClearButtonVisibility="WhileEditing"
                             Grid.Row="2"
                             HorizontalOptions="FillAndExpand"
                             TextColor="Black"
                             Placeholder="Email"
-                            Text="{Binding EmailName}"
+                            Text="{Binding UserEmail}"
                             VerticalOptions="FillAndExpand" />
                         <Entry
+                            IsTextPredictionEnabled = "False"
+                            IsSpellCheckEnabled="false"
+                            ClearButtonVisibility="WhileEditing"
                             Grid.Row="3"
                             HorizontalOptions="FillAndExpand"
                             TextColor="Black"

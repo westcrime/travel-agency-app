@@ -359,3 +359,12 @@ C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-w
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\italy.scale-100.jpg
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_6.0.1623.17311.dll
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Firebase.Auth.dll
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\FireSharp.dll
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Threading.Tasks.dll
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\System.Net.Http.Extensions.dll
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\System.Net.Http.Primitives.dll
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\clrcompression.dll

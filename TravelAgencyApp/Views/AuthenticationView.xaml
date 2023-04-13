@@ -53,13 +53,21 @@
                             Text="Login in to account"
                             TextColor="Black" />
                         <Entry
+                            IsTextPredictionEnabled = "False"
+                            IsSpellCheckEnabled="false"
+                            ClearButtonVisibility="WhileEditing"
+                            x:Name="EmailEntry"
                             Grid.Row="2"
                             HorizontalOptions="FillAndExpand"
                             TextColor="Black"
-                            Placeholder="Username"
-                            Text="{Binding UserName}"
+                            Placeholder="Email"
+                            Text="{Binding UserEmail}"
                             VerticalOptions="FillAndExpand" />
                         <Entry
+                            IsTextPredictionEnabled = "False"
+                            IsSpellCheckEnabled="false"
+                            ClearButtonVisibility="WhileEditing"
+                            x:Name="PasswordEntry"
                             Grid.Row="3"
                             HorizontalOptions="FillAndExpand"
                             TextColor="Black"
@@ -68,6 +76,7 @@
                             Text="{Binding UserPassword}"
                             VerticalOptions="FillAndExpand" />
                         <Button
+                            x:Name="LoginBtn"
                             Grid.Row="4"
                             BackgroundColor="LightSeaGreen"
                             TextColor="White"
@@ -75,6 +84,7 @@
                             CornerRadius="20"
                             Text="Login" />
                         <Button
+                            x:Name="RegisterBtn"
                             Grid.Row="5"
                             BackgroundColor="LightSeaGreen"
                             TextColor="White"

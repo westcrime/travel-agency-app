@@ -49,13 +49,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="FirebaseAuthentication.net" Version="4.0.2" />
+	  <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
+	  <PackageReference Include="FireSharp" Version="2.0.4" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Views\MainMenuView.xaml.cs">
-	    <DependentUpon>MainMenuView.xaml</DependentUpon>
+	  <Compile Update="AppShell.xaml.cs">
+	    <DependentUpon>AppShell.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="Views\RegisterPageView.xaml.cs">
 	    <DependentUpon>RegisterPageView.xaml</DependentUpon>
@@ -63,10 +64,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="AppShell.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\AuthenticationView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\MainMenuView.xaml">
+	  <MauiXaml Update="Views\BasketView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MenuView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ProfileView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\RegisterPageView.xaml">
