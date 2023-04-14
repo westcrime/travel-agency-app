@@ -8,6 +8,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.Controls.Xaml.dll",
 		"Microsoft.Maui.Controls.dll",
 		"Microsoft.Maui.Essentials.dll",
+		"CommunityToolkit.Mvvm.dll",
 		"Firebase.Auth.dll",
 		"FireSharp.dll",
 		"GoogleGson.dll",

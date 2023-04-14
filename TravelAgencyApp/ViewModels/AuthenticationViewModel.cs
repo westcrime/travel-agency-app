@@ -5,10 +5,9 @@ using TravelAgencyApp.Views;
 
 namespace TravelAgencyApp.ViewModels
 {
-    class AuthenticationViewModel : INotifyPropertyChanged
+    public class AuthenticationViewModel : INotifyPropertyChanged
     {
         public string webApiKey = "AIzaSyC0spDZvY5wOLonDHlgZdWxqdNjjmbaNw8";
-        private INavigation _navigation;
         private string userEmail;
         private string userPassword;
 
@@ -35,9 +34,8 @@ namespace TravelAgencyApp.ViewModels
             }
         }
 
-        public AuthenticationViewModel(INavigation navigation)
+        public AuthenticationViewModel()
         {
-            this._navigation = navigation;
             RegisterBtn = new Command(RegisterBtnTappedAsync);
             LoginBtn = new Command(LoginBtnTappedAsync);
         }
@@ -52,7 +50,11 @@ namespace TravelAgencyApp.ViewModels
                 var content = await auth.GetFreshAuthAsync();
                 var serializedContent = JsonConvert.SerializeObject(content);
                 Preferences.Set("FreshFirebaseToken", serializedContent);
-                await this._navigation.PushAsync(new MenuView());
+                //Preferences.Set("UserEmail", UserEmail);
+                //Preferences.Set("UserPassword", userPassword);
+                App.User.Email = UserEmail;
+                App.User.Password = UserPassword;
+                await Shell.Current.GoToAsync($"//{nameof(ProfileView)}");
             }
             catch (Exception ex)
             {
@@ -64,7 +66,7 @@ namespace TravelAgencyApp.ViewModels
 
         private async void RegisterBtnTappedAsync(object obj)
         {
-            await this._navigation.PushAsync(new RegisterPageView());
+            await Shell.Current.GoToAsync($"//{nameof(RegisterPageView)}");
         }
 
         private void RaisePropertyChanged(string v)

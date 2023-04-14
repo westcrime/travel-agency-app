@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rQp8r9y0tmsew825EfJBjgGFQlIRvU1PFvStzDBqD2ZN52F0c9rheVcCze0Xzp09alHp1AzaKcTuJYPiJXK60A==",
+  "dgSpecHash": "GTUI0Kdfj+oj+W7/K93bCyGVMwxWJWagHyN9Mehvc2gf8jXF5vIokFdBvdsVvY7yPCmSWe2FZZDA1ahMwL6HeQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\westcrime\\course_2\\travel-agency-app\\TravelAgencyApp\\TravelAgencyApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\westcrime\\.nuget\\packages\\communitytoolkit.mvvm\\8.1.0\\communitytoolkit.mvvm.8.1.0.nupkg.sha512",
     "C:\\Users\\westcrime\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
     "C:\\Users\\westcrime\\.nuget\\packages\\firesharp\\2.0.4\\firesharp.2.0.4.nupkg.sha512",
     "C:\\Users\\westcrime\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",

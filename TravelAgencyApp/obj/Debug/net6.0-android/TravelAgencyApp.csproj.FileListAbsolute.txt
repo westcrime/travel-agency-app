@@ -962,3 +962,9 @@ C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-a
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-android\lp\151\jl\files.cache
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-android\lp\153\jl\files.cache
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-android\lp\155\jl\files.cache
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-android\resizetizer\r\drawable\basket.png
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-android\resizetizer\r\drawable\profile.png
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-android\resizetizer\r\drawable\signout.png
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-android\android\assets\CommunityToolkit.Mvvm.dll
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-android\android\assets\CommunityToolkit.Mvvm.pdb
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-android\resizetizer\r\drawable\basket2.png

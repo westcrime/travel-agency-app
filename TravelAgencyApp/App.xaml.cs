@@ -1,14 +1,16 @@
-﻿using TravelAgencyApp.Views;
+﻿using TravelAgencyApp.Models;
+using TravelAgencyApp.Views;
 
 namespace TravelAgencyApp;
 
 public partial class App : Application
 {
+	public static UserID User;
 	public App()
 	{
 		InitializeComponent();
-
-		MainPage = new NavigationPage(new AuthenticationView());
+		User = new UserID();
+		MainPage = new MenuShell();
 		
 	}
 }

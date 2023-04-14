@@ -4,20 +4,19 @@ using System.ComponentModel;
 //using FireSharp.Config;
 using TravelAgencyApp.Data;
 using TravelAgencyApp.Exceptions;
+using TravelAgencyApp.Views;
 
 namespace TravelAgencyApp.ViewModels
 {
     public class RegisterViewModel : INotifyPropertyChanged
     {
         public string webApiKey = "AIzaSyC0spDZvY5wOLonDHlgZdWxqdNjjmbaNw8";
-        private INavigation _navigation;
         public Command RegisterUser { get; set; }
         private string email;
         private string password;
 
-        public RegisterViewModel(INavigation navigation) 
+        public RegisterViewModel() 
         {
-            this._navigation = navigation;
             RegisterUser = new Command(RegisterUserTappedAsync);
         }
 
@@ -57,7 +56,7 @@ namespace TravelAgencyApp.ViewModels
                 string token = auth.FirebaseToken;
                 if (token != null)
                     await App.Current.MainPage.DisplayAlert("Success!", "User Registered successfully", "OK");
-                await this._navigation.PopAsync();
+                await Shell.Current.GoToAsync($"//{nameof(AuthenticationView)}");
             }
             catch (Exception ex)
             {

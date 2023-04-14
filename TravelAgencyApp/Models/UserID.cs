@@ -8,17 +8,26 @@ namespace TravelAgencyApp.Models
 {
     public class UserID
     {
-        private readonly string _email;
-        private readonly string _username;
-        private readonly string _password;
-        private readonly ReservationBook _reservationBook;
+        private string _email;
+        private string _password;
+        private ReservationBook _reservationBook;
 
-        public UserID(string email, string username, string password, ReservationBook reservationBook)
+        public UserID(string email,string password, ReservationBook reservationBook)
         {
             _email = email;
-            _username = username;
             _password = password;
             _reservationBook = reservationBook;
+        }
+
+        public UserID() { }
+
+        public string Email {
+            get { return _email; } 
+            set { _email = value; }
+        }
+        public string Password { 
+            get { return _password; }
+            set { _password = value; }
         }
     }
 }

@@ -53,6 +53,7 @@
                             Text="Login in to account"
                             TextColor="Black" />
                         <Entry
+                            PlaceholderColor="LightSeaGreen"
                             IsTextPredictionEnabled = "False"
                             IsSpellCheckEnabled="false"
                             ClearButtonVisibility="WhileEditing"

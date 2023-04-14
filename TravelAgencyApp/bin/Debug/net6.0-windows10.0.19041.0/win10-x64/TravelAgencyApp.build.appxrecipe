@@ -724,6 +724,9 @@
     <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.28\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\communitytoolkit.mvvm\8.1.0\lib\net6.0\CommunityToolkit.Mvvm.dll">
+      <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\firebaseauthentication.net\3.7.2\lib\netstandard1.1\Firebase.Auth.dll">
       <PackagePath>Firebase.Auth.dll</PackagePath>
     </AppxPackagedFile>
@@ -997,6 +1000,24 @@
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\basket.scale-100.png">
+      <PackagePath>basket.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\basket.scale-125.png">
+      <PackagePath>basket.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\basket.scale-150.png">
+      <PackagePath>basket.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\basket.scale-200.png">
+      <PackagePath>basket.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\basket.scale-400.png">
+      <PackagePath>basket.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\basket2.scale-100.png">
+      <PackagePath>basket2.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -1014,6 +1035,36 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\italy.scale-100.jpg">
       <PackagePath>italy.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-100.png">
+      <PackagePath>profile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-125.png">
+      <PackagePath>profile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-150.png">
+      <PackagePath>profile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-200.png">
+      <PackagePath>profile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-400.png">
+      <PackagePath>profile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\signout.scale-100.png">
+      <PackagePath>signout.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\signout.scale-125.png">
+      <PackagePath>signout.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\signout.scale-150.png">
+      <PackagePath>signout.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\signout.scale-200.png">
+      <PackagePath>signout.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\signout.scale-400.png">
+      <PackagePath>signout.scale-400.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

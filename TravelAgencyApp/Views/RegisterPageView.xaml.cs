@@ -7,7 +7,7 @@ public partial class RegisterPageView : ContentPage
 	public RegisterPageView()
 	{
 		InitializeComponent();
-		BindingContext = new RegisterViewModel(Navigation);
+		BindingContext = new RegisterViewModel();
 #if WINDOWS
         border.WidthRequest = 450;
 #endif
