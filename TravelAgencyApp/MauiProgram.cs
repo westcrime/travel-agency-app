@@ -21,9 +21,11 @@ public static class MauiProgram
         builder.Services.AddSingleton<RegisterPageView>();
         builder.Services.AddSingleton<ProfileView>();
         builder.Services.AddSingleton<BasketView>();
+        builder.Services.AddSingleton<MainMenu>();
 
         builder.Services.AddSingleton<AuthenticationViewModel>();
         builder.Services.AddSingleton<RegisterViewModel>();
+        builder.Services.AddSingleton<MainMenuViewModel>();
         return builder.Build();
 	}
 }

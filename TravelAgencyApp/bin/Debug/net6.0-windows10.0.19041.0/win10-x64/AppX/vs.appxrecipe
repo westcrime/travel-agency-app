@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-14T12:14:58.715</Modified>
+      <Modified>2023-04-16T19:21:30.709</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-04-14T12:12:17.457</Modified>
+      <Modified>2023-04-16T19:12:50.261</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\TravelAgencyApp.runtimeconfig.json">
       <PackagePath>TravelAgencyApp.runtimeconfig.json</PackagePath>
-      <Modified>2023-04-14T11:01:14.352</Modified>
+      <Modified>2023-04-16T17:40:31.715</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\TravelAgencyApp.dll">
       <PackagePath>TravelAgencyApp.dll</PackagePath>
-      <Modified>2023-04-14T12:14:56.053</Modified>
+      <Modified>2023-04-16T19:21:27.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>TravelAgencyApp.exe</PackagePath>
-      <Modified>2023-04-14T12:14:56.071</Modified>
+      <Modified>2023-04-16T19:21:27.749</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.16\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -973,9 +973,17 @@
       <PackagePath>Firebase.Auth.dll</PackagePath>
       <Modified>2021-08-05T06:45:32.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\firebasedatabase.net\4.2.0\lib\netstandard2.0\Firebase.dll">
+      <PackagePath>Firebase.dll</PackagePath>
+      <Modified>2023-02-05T16:37:42.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\firesharp\2.0.4\lib\portable-net45+sl5+wp8+win8\FireSharp.dll">
       <PackagePath>FireSharp.dll</PackagePath>
       <Modified>2016-05-10T13:41:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\litedb\4.1.4\lib\netstandard2.0\LiteDB.dll">
+      <PackagePath>LiteDB.dll</PackagePath>
+      <Modified>2018-06-11T19:04:22.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\microsoft.bcl.async\1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll">
       <PackagePath>Microsoft.Threading.Tasks.Extensions.Desktop.dll</PackagePath>
@@ -1089,6 +1097,14 @@
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
       <Modified>2023-03-08T07:09:54.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\system.reactive\4.0.0\lib\netstandard2.0\System.Reactive.dll">
+      <PackagePath>System.Reactive.dll</PackagePath>
+      <Modified>2018-05-25T16:44:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\system.runtime.interopservices.windowsruntime\4.3.0\lib\netstandard1.3\System.Runtime.InteropServices.WindowsRuntime.dll">
+      <PackagePath>System.Runtime.InteropServices.WindowsRuntime.dll</PackagePath>
+      <Modified>2016-11-05T04:56:52.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\microsoft.graphics.win2d\1.0.3.1\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2022-04-28T15:57:10.000</Modified>
@@ -1103,7 +1119,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\TravelAgencyApp.deps.json">
       <PackagePath>TravelAgencyApp.deps.json</PackagePath>
-      <Modified>2023-04-14T12:14:58.374</Modified>
+      <Modified>2023-04-16T19:21:30.463</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\6.0.552\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -1123,23 +1139,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-04-13T16:12:12.602</Modified>
+      <Modified>2023-04-16T17:30:33.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-04-13T16:12:12.631</Modified>
+      <Modified>2023-04-16T17:30:33.094</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-04-13T16:12:12.668</Modified>
+      <Modified>2023-04-16T17:30:33.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-04-13T16:12:12.725</Modified>
+      <Modified>2023-04-16T17:30:33.488</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-04-13T16:12:12.966</Modified>
+      <Modified>2023-04-16T17:30:33.681</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -1151,207 +1167,191 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-04-14T12:04:49.764</Modified>
+      <Modified>2023-04-16T17:30:34.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.301</Modified>
+      <Modified>2023-04-16T17:30:35.732</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.331</Modified>
+      <Modified>2023-04-16T17:30:35.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.358</Modified>
+      <Modified>2023-04-16T17:30:35.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.396</Modified>
+      <Modified>2023-04-16T17:30:35.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.537</Modified>
+      <Modified>2023-04-16T17:30:36.173</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.904</Modified>
+      <Modified>2023-04-16T17:30:35.181</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.909</Modified>
+      <Modified>2023-04-16T17:30:35.192</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.932</Modified>
+      <Modified>2023-04-16T17:30:35.260</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.915</Modified>
+      <Modified>2023-04-16T17:30:35.207</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.922</Modified>
+      <Modified>2023-04-16T17:30:35.217</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.866</Modified>
+      <Modified>2023-04-16T17:30:35.129</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.872</Modified>
+      <Modified>2023-04-16T17:30:35.140</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.899</Modified>
+      <Modified>2023-04-16T17:30:35.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.877</Modified>
+      <Modified>2023-04-16T17:30:35.145</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.883</Modified>
+      <Modified>2023-04-16T17:30:35.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.793</Modified>
+      <Modified>2023-04-16T17:30:34.825</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.799</Modified>
+      <Modified>2023-04-16T17:30:34.868</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.807</Modified>
+      <Modified>2023-04-16T17:30:34.912</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.813</Modified>
+      <Modified>2023-04-16T17:30:34.938</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.824</Modified>
+      <Modified>2023-04-16T17:30:34.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.829</Modified>
+      <Modified>2023-04-16T17:30:34.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.835</Modified>
+      <Modified>2023-04-16T17:30:35.013</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.861</Modified>
+      <Modified>2023-04-16T17:30:35.071</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.841</Modified>
+      <Modified>2023-04-16T17:30:35.021</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.847</Modified>
+      <Modified>2023-04-16T17:30:35.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.021</Modified>
+      <Modified>2023-04-16T17:30:35.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.037</Modified>
+      <Modified>2023-04-16T17:30:35.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.052</Modified>
+      <Modified>2023-04-16T17:30:35.449</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.070</Modified>
+      <Modified>2023-04-16T17:30:35.473</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.141</Modified>
+      <Modified>2023-04-16T17:30:35.520</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.969</Modified>
+      <Modified>2023-04-16T17:30:35.344</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.975</Modified>
+      <Modified>2023-04-16T17:30:35.355</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.982</Modified>
+      <Modified>2023-04-16T17:30:35.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.989</Modified>
+      <Modified>2023-04-16T17:30:35.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.008</Modified>
+      <Modified>2023-04-16T17:30:35.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.938</Modified>
+      <Modified>2023-04-16T17:30:35.274</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.943</Modified>
+      <Modified>2023-04-16T17:30:35.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.948</Modified>
+      <Modified>2023-04-16T17:30:35.298</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.954</Modified>
+      <Modified>2023-04-16T17:30:35.311</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.964</Modified>
+      <Modified>2023-04-16T17:30:35.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.153</Modified>
+      <Modified>2023-04-16T17:30:35.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.168</Modified>
+      <Modified>2023-04-16T17:30:35.555</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.187</Modified>
+      <Modified>2023-04-16T17:30:35.579</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.210</Modified>
+      <Modified>2023-04-16T17:30:35.617</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-04-14T12:04:50.280</Modified>
+      <Modified>2023-04-16T17:30:35.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\basket.scale-100.png">
       <PackagePath>basket.scale-100.png</PackagePath>
       <Modified>2023-04-14T11:50:55.123</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\basket.scale-125.png">
-      <PackagePath>basket.scale-125.png</PackagePath>
-      <Modified>2023-04-14T11:51:28.855</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\basket.scale-150.png">
-      <PackagePath>basket.scale-150.png</PackagePath>
-      <Modified>2023-04-14T11:51:29.086</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\basket.scale-200.png">
-      <PackagePath>basket.scale-200.png</PackagePath>
-      <Modified>2023-04-14T11:51:29.428</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\basket.scale-400.png">
-      <PackagePath>basket.scale-400.png</PackagePath>
-      <Modified>2023-04-14T11:51:30.893</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\basket2.scale-100.png">
       <PackagePath>basket2.scale-100.png</PackagePath>
@@ -1359,67 +1359,51 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.708</Modified>
+      <Modified>2023-04-16T17:30:34.359</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.732</Modified>
+      <Modified>2023-04-16T17:30:34.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.771</Modified>
+      <Modified>2023-04-16T17:30:34.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.818</Modified>
+      <Modified>2023-04-16T17:30:34.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-04-14T12:04:49.912</Modified>
+      <Modified>2023-04-16T17:30:34.511</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\forflyout.scale-100.jpg">
+      <PackagePath>forflyout.scale-100.jpg</PackagePath>
+      <Modified>2023-04-15T13:39:46.411</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\forflyout.scale-100.png">
+      <PackagePath>forflyout.scale-100.png</PackagePath>
+      <Modified>2023-04-15T15:08:10.350</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\italy.scale-100.jpg">
       <PackagePath>italy.scale-100.jpg</PackagePath>
       <Modified>2023-04-11T18:30:46.033</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\overview.scale-100.png">
+      <PackagePath>overview.scale-100.png</PackagePath>
+      <Modified>2023-04-15T13:44:19.848</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-100.png">
       <PackagePath>profile.scale-100.png</PackagePath>
       <Modified>2023-04-14T11:50:43.458</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-125.png">
-      <PackagePath>profile.scale-125.png</PackagePath>
-      <Modified>2023-04-14T11:51:28.889</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-150.png">
-      <PackagePath>profile.scale-150.png</PackagePath>
-      <Modified>2023-04-14T11:51:29.101</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-200.png">
-      <PackagePath>profile.scale-200.png</PackagePath>
-      <Modified>2023-04-14T11:51:29.487</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-400.png">
-      <PackagePath>profile.scale-400.png</PackagePath>
-      <Modified>2023-04-14T11:51:30.972</Modified>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\pyramids.scale-100.jpg">
+      <PackagePath>pyramids.scale-100.jpg</PackagePath>
+      <Modified>2023-04-16T13:24:37.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\signout.scale-100.png">
       <PackagePath>signout.scale-100.png</PackagePath>
       <Modified>2023-04-14T11:50:31.162</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\signout.scale-125.png">
-      <PackagePath>signout.scale-125.png</PackagePath>
-      <Modified>2023-04-14T11:51:28.868</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\signout.scale-150.png">
-      <PackagePath>signout.scale-150.png</PackagePath>
-      <Modified>2023-04-14T11:51:29.079</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\signout.scale-200.png">
-      <PackagePath>signout.scale-200.png</PackagePath>
-      <Modified>2023-04-14T11:51:29.444</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\signout.scale-400.png">
-      <PackagePath>signout.scale-400.png</PackagePath>
-      <Modified>2023-04-14T11:51:30.853</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

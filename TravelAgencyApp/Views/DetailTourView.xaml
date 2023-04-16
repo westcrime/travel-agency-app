@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TravelAgencyApp.Views.DetailTourView">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, Auto, Auto, Auto" RowSpacing="0" BindingContext="{Binding SelectedTour}" BackgroundColor="White">
+
+            <StackLayout Grid.Row="0" BackgroundColor="#ededed" HeightRequest="350">
+                <Border Margin="20,20,20,20" BackgroundColor="#ededed" StrokeThickness="0" HeightRequest="300" WidthRequest="500">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20" BackgroundColor="#ededed"></RoundRectangle>
+                    </Border.StrokeShape>
+                    <Image Source="{Binding Picture}" Aspect="Fill"/>
+                </Border>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" HeightRequest="300">
+                <Grid>
+                    <Grid RowDefinitions="Auto,Auto,Auto,Auto" Padding="20,45,20,0" RowSpacing="20" >
+                        <Label Grid.Row="1" Text="{Binding Name}" FontSize="30" FontAttributes="Bold" TextColor="Black"/>
+                        <Label Grid.Row="2" Text="{Binding Description}" FontSize="18" TextColor="Black"/>
+                        <Label Grid.Row="3" Text="{Binding Price}" FontSize="25" Padding="0,15" TextColor="LightSeaGreen" FontAttributes="Bold"/>
+                    </Grid>
+                </Grid>
+            </StackLayout>
+
+            <BoxView Grid.Row="2" CornerRadius="0,0,50,50" Margin="0,-1,0,0" Color="White" HeightRequest="150" />
+
+            <Button Text="Add to Basket" Grid.Row="2" CornerRadius="20"
+                    Command="{Binding Source={x:Reference DetailTourView},Path=BindingContext.TourToBasketTapped}"
+                    BackgroundColor="LightSeaGreen" Margin="60,40,60,90" FontAttributes="Bold" HeightRequest="55"
+                    TextColor="White" VerticalOptions="Center"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -4,10 +4,10 @@ namespace TravelAgencyApp.Views;
 
 public partial class AuthenticationView : ContentPage
 {
-    public AuthenticationView()
+    public AuthenticationView(AuthenticationViewModel authentication)
     {
         InitializeComponent();
-        BindingContext = new AuthenticationViewModel();
+        BindingContext = authentication;
 #if WINDOWS
         border.WidthRequest = 450;
 #endif

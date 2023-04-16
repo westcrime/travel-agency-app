@@ -4,10 +4,10 @@ namespace TravelAgencyApp.Views;
 
 public partial class RegisterPageView : ContentPage
 {
-	public RegisterPageView()
+	public RegisterPageView(RegisterViewModel registerViewModel)
 	{
 		InitializeComponent();
-		BindingContext = new RegisterViewModel();
+		BindingContext = registerViewModel;
 #if WINDOWS
         border.WidthRequest = 450;
 #endif

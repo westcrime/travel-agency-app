@@ -26,59 +26,73 @@
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="25" />
                     </Border.StrokeShape>
-                    <Grid
+                    <VerticalStackLayout
                             Padding="20,20,20,20"
                             HorizontalOptions="FillAndExpand"
-                            RowSpacing="20"
+                            Spacing="20"
                             VerticalOptions="FillAndExpand">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
+
                         <Label
-                            Grid.Row="0"
                             FontAttributes="Bold"
                             FontSize="24"
                             HorizontalOptions="CenterAndExpand"
                             Text="Registration"
                             TextColor="Black" />
                         <Label
-                            Grid.Row="1"
                             HorizontalOptions="CenterAndExpand"
                             Text="Enter your email and password"
                             TextColor="Black" />
-                        <Entry
-                            IsTextPredictionEnabled = "False"
-                            IsSpellCheckEnabled="false"
-                            ClearButtonVisibility="WhileEditing"
-                            Grid.Row="2"
-                            HorizontalOptions="FillAndExpand"
-                            TextColor="Black"
-                            Placeholder="Email"
-                            Text="{Binding UserEmail}"
-                            VerticalOptions="FillAndExpand" />
-                        <Entry
-                            IsTextPredictionEnabled = "False"
-                            IsSpellCheckEnabled="false"
-                            ClearButtonVisibility="WhileEditing"
-                            Grid.Row="3"
-                            HorizontalOptions="FillAndExpand"
-                            TextColor="Black"
-                            IsPassword="True"
-                            Placeholder="Password"
-                            Text="{Binding UserPassword}"
-                            VerticalOptions="FillAndExpand" />
+
+                        <Border Padding="8"
+                                BackgroundColor="White">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="25" />
+                            </Border.StrokeShape>
+                            <Entry
+                                IsTextPredictionEnabled = "False"
+                                IsSpellCheckEnabled="false"
+                                ClearButtonVisibility="WhileEditing"
+                                HorizontalOptions="FillAndExpand"
+                                TextColor="Black"
+                                Placeholder="Email"
+                                Text="{Binding UserEmail}"
+                                VerticalOptions="FillAndExpand" />
+                        </Border>
+
+                        <Border Padding="8"
+                                BackgroundColor="White">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="25" />
+                            </Border.StrokeShape>
+                            <Entry
+                                IsTextPredictionEnabled = "False"
+                                IsSpellCheckEnabled="false"
+                                ClearButtonVisibility="WhileEditing"
+                                HorizontalOptions="FillAndExpand"
+                                TextColor="Black"
+                                IsPassword="True"
+                                Placeholder="Password"
+                                Text="{Binding UserPassword}"
+                                VerticalOptions="FillAndExpand" />
+                        </Border>
+
+
                         <Button
-                            Grid.Row="4"
                             BackgroundColor="LightSeaGreen"
                             TextColor="White"
                             Command="{Binding RegisterUser}"
                             CornerRadius="20"
                             Text="Register" />
-                    </Grid>
+
+
+                        <Button
+                            BackgroundColor="LightSeaGreen"
+                            TextColor="White"
+                            Command="{Binding BackToLogin}"
+                            CornerRadius="20"
+                            Text="Back to login page" />
+
+                    </VerticalStackLayout>
                 </Border>
             </Grid>
         </Grid>

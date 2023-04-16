@@ -10,9 +10,9 @@ namespace TravelAgencyApp.Models
     {
         private DateTime _timeOfReservation;
         private Double _price;
-        private TourID _tourID;
+        private Tour _tourID;
 
-        public Reservation(double price, TourID tourID) 
+        public Reservation(double price, Tour tourID) 
         {
             _timeOfReservation = DateTime.Now;
             _price = price;

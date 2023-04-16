@@ -1,13 +1,14 @@
 ﻿using Firebase.Auth;
 using Newtonsoft.Json;
 using System.ComponentModel;
+using TravelAgencyApp.UserControl;
 using TravelAgencyApp.Views;
 
 namespace TravelAgencyApp.ViewModels
 {
     public class AuthenticationViewModel : INotifyPropertyChanged
     {
-        public string webApiKey = "AIzaSyC0spDZvY5wOLonDHlgZdWxqdNjjmbaNw8";
+        
         private string userEmail;
         private string userPassword;
 
@@ -43,17 +44,22 @@ namespace TravelAgencyApp.ViewModels
         private async void LoginBtnTappedAsync(object obj)
         {
 
-            var authProvider = new FirebaseAuthProvider(new FirebaseConfig(webApiKey));
+            
             try
             {
-                var auth = await authProvider.SignInWithEmailAndPasswordAsync(userEmail, UserPassword);
-                var content = await auth.GetFreshAuthAsync();
-                var serializedContent = JsonConvert.SerializeObject(content);
-                Preferences.Set("FreshFirebaseToken", serializedContent);
-                //Preferences.Set("UserEmail", UserEmail);
-                //Preferences.Set("UserPassword", userPassword);
-                App.User.Email = UserEmail;
-                App.User.Password = UserPassword;
+                var auth = await App.authProvider.SignInWithEmailAndPasswordAsync(userEmail, UserPassword);
+                if (Preferences.ContainsKey("UserEmail") ||
+                    Preferences.ContainsKey("UserPassword"))
+                {
+                    Preferences.Remove("UserEmail");
+                    Preferences.Remove("UserPassword");
+                }
+                Preferences.Set("UserEmail", UserEmail);
+                Preferences.Set("UserPassword", userPassword);
+                App.userId.Email = UserEmail;
+                App.userId.Password = userPassword;
+                MenuShell.Current.FlyoutFooter = new FlyoutFooterControl();
+
                 await Shell.Current.GoToAsync($"//{nameof(ProfileView)}");
             }
             catch (Exception ex)

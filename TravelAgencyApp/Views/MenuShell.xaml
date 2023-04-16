@@ -10,6 +10,10 @@
     Shell.BackgroundColor="LightSeaGreen"
     FlyoutBackgroundColor="LightSeaGreen">
 
+    <Shell.FlyoutHeader>
+        <Image Source="forflyout.png" Aspect="AspectFill"></Image>
+    </Shell.FlyoutHeader>
+
     <ShellContent
         ContentTemplate="{DataTemplate local:AuthenticationView}"
         FlyoutItemIsVisible="False"
@@ -22,12 +26,17 @@
         Shell.FlyoutBehavior="Disabled"
         Route="RegisterPageView"/>
 
+
+
+    
     <FlyoutItem Title="Profile" FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent
                 Title="My profile" Icon="{x:Static model:Icons.Profile}" ContentTemplate="{DataTemplate local:ProfileView}" Route="ProfileView"/>
         <ShellContent
                 Title="My Basket" Icon="{x:Static model:Icons.Basket}" ContentTemplate="{DataTemplate local:BasketView}" Route="BasketView"/>
+        <ShellContent
+                Title="Tour overview" Icon="{x:Static model:Icons.Overview}" ContentTemplate="{DataTemplate local:MainMenu}" Route="MainMenu"/>
+
     </FlyoutItem>
-   
-    
+
 </Shell>

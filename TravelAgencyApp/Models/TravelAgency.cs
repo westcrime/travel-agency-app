@@ -8,9 +8,9 @@ namespace TravelAgencyApp.Models
 {
     public class TravelAgency
     {
-        private readonly UserID _currentUser;
+        private readonly User _currentUser;
 
-        public TravelAgency(UserID user)
+        public TravelAgency(User user)
         {
             _currentUser = user;
         }

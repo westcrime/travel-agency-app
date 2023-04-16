@@ -11,5 +11,6 @@ namespace TravelAgencyApp.Models
         public const string Profile = "profile.png";
         public const string Basket = "basket2.png";
         public const string SignOut = "signout.png";
+        public const string Overview = "overview.png";
     }
 }
