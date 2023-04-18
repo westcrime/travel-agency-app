@@ -80,7 +80,7 @@
                         <Button
                             BackgroundColor="LightSeaGreen"
                             TextColor="White"
-                            Command="{Binding RegisterUser}"
+                            Command="{Binding RegisterUserCommand}"
                             CornerRadius="20"
                             Text="Register" />
 
@@ -88,7 +88,7 @@
                         <Button
                             BackgroundColor="LightSeaGreen"
                             TextColor="White"
-                            Command="{Binding BackToLogin}"
+                            Command="{Binding BackToLoginCommand}"
                             CornerRadius="20"
                             Text="Back to login page" />
 

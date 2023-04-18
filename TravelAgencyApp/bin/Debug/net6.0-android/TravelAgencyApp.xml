@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TravelAgencyApp</name>
+    </assembly>
+    <members>
+        <member name="P:TravelAgencyApp.ViewModels.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.BaseViewModel.isBusy"/>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.BasketViewModel.BasketTours">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.BasketViewModel.basketTours"/>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.BasketViewModel.Cost">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.BasketViewModel.cost"/>
+        </member>
+        <member name="F:TravelAgencyApp.ViewModels.BasketViewModel.deleteTourCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.BasketViewModel.DeleteTourCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.BasketViewModel.DeleteTourCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.BasketViewModel.DeleteTour(TravelAgencyApp.Models.Tour)"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.SelectedTour">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.DetailTourViewModel.selectedTour"/>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.Name">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.DetailTourViewModel.name"/>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.Description">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.DetailTourViewModel.description"/>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.Price">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.DetailTourViewModel.price"/>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.Picture">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.DetailTourViewModel.picture"/>
+        </member>
+        <member name="F:TravelAgencyApp.ViewModels.DetailTourViewModel.tourToBasketCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.DetailTourViewModel.TourToBasketCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.TourToBasketCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.DetailTourViewModel.TourToBasket"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.LoginViewModel.UserEmail">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.LoginViewModel.userEmail"/>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.LoginViewModel.UserPassword">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.LoginViewModel.userPassword"/>
+        </member>
+        <member name="F:TravelAgencyApp.ViewModels.LoginViewModel.registerCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.LoginViewModel.RegisterCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.LoginViewModel.RegisterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.LoginViewModel.Register(System.Object)"/>.</summary>
+        </member>
+        <member name="F:TravelAgencyApp.ViewModels.LoginViewModel.loginCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.LoginViewModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.LoginViewModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.LoginViewModel.Login(System.Object)"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.MainMenuViewModel.SelectedTour">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.MainMenuViewModel.selectedTour"/>
+        </member>
+        <member name="F:TravelAgencyApp.ViewModels.MainMenuViewModel.tourClickedCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.MainMenuViewModel.TourClickedCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.MainMenuViewModel.TourClickedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.MainMenuViewModel.TourClicked(TravelAgencyApp.Models.Tour)"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.MenuShellViewModel.UserEmail">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.MenuShellViewModel._userEmail"/>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.RegisterViewModel.UserEmail">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.RegisterViewModel.userEmail"/>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.RegisterViewModel.UserPassword">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.RegisterViewModel.userPassword"/>
+        </member>
+        <member name="F:TravelAgencyApp.ViewModels.RegisterViewModel.backToLoginCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.RegisterViewModel.BackToLoginCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.RegisterViewModel.BackToLoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.RegisterViewModel.BackToLogin(System.Object)"/>.</summary>
+        </member>
+        <member name="F:TravelAgencyApp.ViewModels.RegisterViewModel.registerUserCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.RegisterViewModel.RegisterUserCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.RegisterViewModel.RegisterUserCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.RegisterViewModel.RegisterUser(System.Object)"/>.</summary>
+        </member>
+    </members>
+</doc>

@@ -2,6 +2,36 @@
   "version": 3,
   "targets": {
     "net6.0-android31.0": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AndHUD": "1.5.0",
+          "Xamarin.Google.Android.Material": "1.6.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AndHUD/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -2640,6 +2670,36 @@
       }
     },
     "net6.0-android31.0/android-arm": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AndHUD": "1.5.0",
+          "Xamarin.Google.Android.Material": "1.6.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AndHUD/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -5214,6 +5274,36 @@
       }
     },
     "net6.0-android31.0/android-arm64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AndHUD": "1.5.0",
+          "Xamarin.Google.Android.Material": "1.6.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AndHUD/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -7788,6 +7878,36 @@
       }
     },
     "net6.0-android31.0/android-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AndHUD": "1.5.0",
+          "Xamarin.Google.Android.Material": "1.6.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AndHUD/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -10362,6 +10482,36 @@
       }
     },
     "net6.0-android31.0/android-x86": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AndHUD": "1.5.0",
+          "Xamarin.Google.Android.Material": "1.6.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AndHUD/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -12936,6 +13086,36 @@
       }
     },
     "net6.0-android31.0/iossimulator-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AndHUD": "1.5.0",
+          "Xamarin.Google.Android.Material": "1.6.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AndHUD/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -15510,6 +15690,36 @@
       }
     },
     "net6.0-android31.0/maccatalyst-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AndHUD": "1.5.0",
+          "Xamarin.Google.Android.Material": "1.6.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AndHUD/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -18084,6 +18294,36 @@
       }
     },
     "net6.0-android31.0/win10-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AndHUD": "1.5.0",
+          "Xamarin.Google.Android.Material": "1.6.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AndHUD/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/AndHUD.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -20658,6 +20898,39 @@
       }
     },
     "net6.0-ios16.1": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -22323,6 +22596,39 @@
       }
     },
     "net6.0-ios16.1/android-arm": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -24295,6 +24601,39 @@
       }
     },
     "net6.0-ios16.1/android-arm64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -26267,6 +26606,39 @@
       }
     },
     "net6.0-ios16.1/android-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -28239,6 +28611,39 @@
       }
     },
     "net6.0-ios16.1/android-x86": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -30211,6 +30616,39 @@
       }
     },
     "net6.0-ios16.1/iossimulator-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -32183,6 +32621,39 @@
       }
     },
     "net6.0-ios16.1/maccatalyst-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -34155,6 +34626,39 @@
       }
     },
     "net6.0-ios16.1/win10-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -36123,6 +36627,39 @@
       }
     },
     "net6.0-maccatalyst16.1": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -37782,6 +38319,39 @@
       }
     },
     "net6.0-maccatalyst16.1/android-arm": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -39748,6 +40318,39 @@
       }
     },
     "net6.0-maccatalyst16.1/android-arm64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -41714,6 +42317,39 @@
       }
     },
     "net6.0-maccatalyst16.1/android-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -43680,6 +44316,39 @@
       }
     },
     "net6.0-maccatalyst16.1/android-x86": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -45646,6 +46315,39 @@
       }
     },
     "net6.0-maccatalyst16.1/iossimulator-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -47612,6 +48314,39 @@
       }
     },
     "net6.0-maccatalyst16.1/maccatalyst-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -49578,6 +50313,39 @@
       }
     },
     "net6.0-maccatalyst16.1/win10-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "BTProgressHUD": "1.5.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BTProgressHUD/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -51540,6 +52308,19 @@
       }
     },
     "net6.0-windows10.0.19041": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -53330,6 +54111,19 @@
       }
     },
     "net6.0-windows10.0.19041/android-arm": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -55399,6 +56193,19 @@
       }
     },
     "net6.0-windows10.0.19041/android-arm64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -57468,6 +58275,19 @@
       }
     },
     "net6.0-windows10.0.19041/android-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -59537,6 +60357,19 @@
       }
     },
     "net6.0-windows10.0.19041/android-x86": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -61606,6 +62439,19 @@
       }
     },
     "net6.0-windows10.0.19041/iossimulator-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -63675,6 +64521,19 @@
       }
     },
     "net6.0-windows10.0.19041/maccatalyst-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -65744,6 +66603,19 @@
       }
     },
     "net6.0-windows10.0.19041/win10-x64": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.1.0": {
         "type": "package",
         "compile": {
@@ -67816,6 +68688,69 @@
     }
   },
   "libraries": {
+    "Acr.UserDialogs/8.0.1": {
+      "sha512": "17RkOZQf/j+osXl7UURPbDpHNL0wGRYYpi+P5Sl3FJOIwT9c0jPLgSPn48NFVdmDjKIckTXiFgc+u0LNNhhLjw==",
+      "type": "package",
+      "path": "acr.userdialogs/8.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "acr.userdialogs.8.0.1.nupkg.sha512",
+        "acr.userdialogs.nuspec",
+        "lib/net6.0-android31.0/Acr.UserDialogs.dll",
+        "lib/net6.0-android31.0/Acr.UserDialogs.xml",
+        "lib/net6.0-ios15.4/Acr.UserDialogs.dll",
+        "lib/net6.0-ios15.4/Acr.UserDialogs.xml",
+        "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll",
+        "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.xml",
+        "lib/net6.0/Acr.UserDialogs.dll",
+        "lib/net6.0/Acr.UserDialogs.xml",
+        "readme.txt"
+      ]
+    },
+    "AndHUD/1.5.0": {
+      "sha512": "7Z5agaYCXCIj2V9atKjHuJ2wk7POnsjtDmJyZdt0XhZ2PeEDT4DiS5MAX0+kf2O57cOup5v1NBi39p3naXpfTA==",
+      "type": "package",
+      "path": "andhud/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "andhud.1.5.0.nupkg.sha512",
+        "andhud.nuspec",
+        "icon.png",
+        "lib/monoandroid12.0/AndHUD.dll",
+        "lib/monoandroid12.0/AndHUD.pdb",
+        "lib/monoandroid12.0/AndHUD.xml",
+        "lib/net6.0-android31.0/AndHUD.aar",
+        "lib/net6.0-android31.0/AndHUD.dll",
+        "lib/net6.0-android31.0/AndHUD.pdb",
+        "lib/net6.0-android31.0/AndHUD.xml"
+      ]
+    },
+    "BTProgressHUD/1.5.0": {
+      "sha512": "ElcHjPsn/atDmK+2lUKXIGn99zAVK+k+H584a5fdl3CxqmpfaMrWqFbikTlQvhuS+argKUBRFNIFm2lu/PrmcQ==",
+      "type": "package",
+      "path": "btprogresshud/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NOTICE",
+        "btprogresshud.1.5.0.nupkg.sha512",
+        "btprogresshud.nuspec",
+        "icon.png",
+        "lib/net6.0-ios15.4/BTProgressHUD.dll",
+        "lib/net6.0-ios15.4/BTProgressHUD.pdb",
+        "lib/net6.0-ios15.4/BTProgressHUD.xml",
+        "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll",
+        "lib/net6.0-maccatalyst15.4/BTProgressHUD.pdb",
+        "lib/net6.0-maccatalyst15.4/BTProgressHUD.xml",
+        "lib/xamarinios10/BTProgressHUD.dll",
+        "lib/xamarinios10/BTProgressHUD.pdb",
+        "lib/xamarinios10/BTProgressHUD.xml"
+      ]
+    },
     "CommunityToolkit.Mvvm/8.1.0": {
       "sha512": "xxOt7lu9a5kB5Fs9RfcxzVlKnhuuPe+w7AXHtmCFtS3oldrsUhEMxHfNulluXSscUUoGxZ0jh55Om12ZP6abHA==",
       "type": "package",
@@ -75487,6 +76422,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-android31.0": [
+      "Acr.UserDialogs >= 8.0.1",
       "CommunityToolkit.Mvvm >= 8.1.0",
       "FireSharp >= 2.0.4",
       "FirebaseAuthentication.net >= 3.7.2",
@@ -75496,6 +76432,7 @@
       "Newtonsoft.Json >= 13.0.3"
     ],
     "net6.0-ios16.1": [
+      "Acr.UserDialogs >= 8.0.1",
       "CommunityToolkit.Mvvm >= 8.1.0",
       "FireSharp >= 2.0.4",
       "FirebaseAuthentication.net >= 3.7.2",
@@ -75506,6 +76443,7 @@
       "System.Runtime.InteropServices.NFloat.Internal >= 6.0.1"
     ],
     "net6.0-maccatalyst16.1": [
+      "Acr.UserDialogs >= 8.0.1",
       "CommunityToolkit.Mvvm >= 8.1.0",
       "FireSharp >= 2.0.4",
       "FirebaseAuthentication.net >= 3.7.2",
@@ -75516,6 +76454,7 @@
       "System.Runtime.InteropServices.NFloat.Internal >= 6.0.1"
     ],
     "net6.0-windows10.0.19041": [
+      "Acr.UserDialogs >= 8.0.1",
       "CommunityToolkit.Mvvm >= 8.1.0",
       "FireSharp >= 2.0.4",
       "FirebaseAuthentication.net >= 3.7.2",
@@ -75587,6 +76526,10 @@
       "net6.0-android31.0": {
         "targetAlias": "net6.0-android",
         "dependencies": {
+          "Acr.UserDialogs": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.1.0, )"
@@ -75665,6 +76608,10 @@
       "net6.0-ios16.1": {
         "targetAlias": "net6.0-ios",
         "dependencies": {
+          "Acr.UserDialogs": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.1.0, )"
@@ -75744,6 +76691,10 @@
       "net6.0-maccatalyst16.1": {
         "targetAlias": "net6.0-maccatalyst",
         "dependencies": {
+          "Acr.UserDialogs": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.1.0, )"
@@ -75824,6 +76775,10 @@
       "net6.0-windows10.0.19041": {
         "targetAlias": "net6.0-windows10.0.19041.0",
         "dependencies": {
+          "Acr.UserDialogs": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.1.0, )"

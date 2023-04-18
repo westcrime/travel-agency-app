@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TravelAgencyApp</name>
+    </assembly>
+    <members>
+        <member name="P:TravelAgencyApp.ViewModels.MenuShellViewModel.UserEmail">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.MenuShellViewModel._userEmail"/>
+        </member>
+    </members>
+</doc>

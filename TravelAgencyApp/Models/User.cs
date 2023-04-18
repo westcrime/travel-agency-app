@@ -35,13 +35,23 @@ namespace TravelAgencyApp.Models
             _reservationBook.Remove(tour.Id);
         }
 
+        public event System.EventHandler UserPropertiesChanged;
+
         public string Email {
-            get { return _email; } 
-            set { _email = value; }
+            get { return _email; }
+            set
+            {
+                _email = value;
+                UserPropertiesChanged?.Invoke(this, EventArgs.Empty);
+            }
         }
         public string Password { 
             get { return _password; }
-            set { _password = value; }
+            set
+            {
+                _password = value;
+                UserPropertiesChanged?.Invoke(this, EventArgs.Empty);
+            }
         }
     }
 }

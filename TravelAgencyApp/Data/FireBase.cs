@@ -1,7 +1,10 @@
-﻿using FireSharp;
+﻿using System.Text.RegularExpressions;
+using FireSharp;
 using TravelAgencyApp.Exceptions;
 using FireSharp.Config;
 using FireSharp.Interfaces;
+using FireSharp.Response;
+using Newtonsoft.Json;
 using TravelAgencyApp.Models;
 
 namespace TravelAgencyApp.Data
@@ -31,7 +34,7 @@ namespace TravelAgencyApp.Data
 
         public async void AddTourAsync(Tour tour)
         {
-            await client.SetAsync("Tours/" + tour.Id + "/TourInfo", tour);
+            await client.SetAsync("Tours/" + tour.Id, tour);
         }
 
         public async void AddUserAsync(User user)
@@ -41,8 +44,8 @@ namespace TravelAgencyApp.Data
 
         public async void RemoveTourAsync(Tour tour)
         {
-            App.userId.RemoveTourFromBook(tour);
-            await client.SetAsync("Users/" + App.userId.Id + "/UserInfo", App.userId);
+            App.User.RemoveTourFromBook(tour);
+            await client.SetAsync("Users/" + App.User.Id, App.User);
             await client.DeleteAsync("Tours/" + tour.Id);
         }
 
@@ -54,7 +57,20 @@ namespace TravelAgencyApp.Data
         public async void UpdateUserAsync(User user)
         {
             await client.DeleteAsync("Users/" + user.Id);
-            await client.SetAsync("Users/" + App.userId.Id + "/UserInfo", App.userId);
+            await client.SetAsync("Users/" + App.User.Id + "/UserInfo", App.User);
+        }   
+
+        public async Task<List<Tour>> GetToursAsync()
+        {
+            FirebaseResponse response = await client.GetAsync("Tours/");
+            var mList = JsonConvert.DeserializeObject<IDictionary<string, Tour>>(response.Body);
+            return mList.Values.ToList();
+        }
+
+        public Tour GetTour(string id)
+        {
+            FirebaseResponse response = client.Get("Tours/" + id);
+            return JsonConvert.DeserializeObject<Tour>(response.Body);
         }
     }
 }

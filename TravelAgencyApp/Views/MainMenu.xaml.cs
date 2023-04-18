@@ -11,4 +11,9 @@ public partial class MainMenu : ContentPage
 		viewModel = new MainMenuViewModel(Navigation);
         BindingContext = viewModel;
     }
+
+    private async void MainMenu_OnLoaded(object sender, EventArgs e)
+    {
+        await viewModel.LoadFromDatabase();
+    }
 }

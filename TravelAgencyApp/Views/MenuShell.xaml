@@ -7,8 +7,8 @@
     xmlns:model="clr-namespace:TravelAgencyApp.Models"
     Shell.TabBarIsVisible="False"
     Shell.ForegroundColor="Black"
-    Shell.BackgroundColor="LightSeaGreen"
-    FlyoutBackgroundColor="LightSeaGreen">
+    Shell.BackgroundColor="#14abb2"
+    FlyoutBackgroundColor="#14abb2">
 
     <Shell.FlyoutHeader>
         <Image Source="forflyout.png" Aspect="AspectFill"></Image>

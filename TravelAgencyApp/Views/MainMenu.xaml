@@ -2,12 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TravelAgencyApp.Views.MainMenu"
+             Loaded="MainMenu_OnLoaded"
              Shell.NavBarIsVisible="True"
              Title="Tours overview">
     <ContentPage.Content>
-        <ScrollView BackgroundColor="#ededed">
+        <ScrollView BackgroundColor="White">
             <VerticalStackLayout Spacing="20">
-                <Border BackgroundColor="#e5f0e4" Margin="80,20,80,0" HeightRequest="60">
+                <Border BackgroundColor="White" Margin="80,20,80,0" HeightRequest="60">
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="30" ></RoundRectangle>
                     </Border.StrokeShape>
@@ -21,26 +22,25 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <Border BackgroundColor="#e5f0e4" Margin="10,10,10,10">
+                                <Border BackgroundColor="White" Margin="10,10,10,10" Padding="20">
                                     <Border.StrokeShape>
                                         <RoundRectangle CornerRadius="20" ></RoundRectangle>
                                     </Border.StrokeShape>
-                                    <Grid Margin="10,0,0,0" ColumnDefinitions="Auto,Auto,Auto" HeightRequest="250">
+                                    <HorizontalStackLayout>
                                         <Border BackgroundColor="#e5f0e4" Margin="10,10,10,10" Grid.Column="0" Grid.RowSpan="3"  HeightRequest="200" WidthRequest="170" >
                                             <Border.StrokeShape>
                                                 <RoundRectangle CornerRadius="20" ></RoundRectangle>
                                             </Border.StrokeShape>
                                             <Image Source="{Binding Picture}"  Aspect="AspectFill"/>
                                         </Border>
-                                        <StackLayout Grid.RowSpan="2" Grid.Column="1" VerticalOptions="Start">
-                                            <Label Text="{Binding Name}"  Padding="10,20,0,10" FontSize="17" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
-                                            <Label  Text="{Binding Price}" Padding="10,0,0,0" FontAttributes="Bold" FontSize="20" TextColor="LightSeaGreen" HorizontalOptions="Center"/>
-                                        </StackLayout>
-                                        <Grid Grid.Column="1" VerticalOptions="Center">
-                                            <Button FontSize="13"  Margin="20,100,10,0" BackgroundColor="LightSeaGreen" Text="View Details" 
-                                                    Command="{Binding Source={x:Reference listView},Path=BindingContext.TourClickedCommand}" CommandParameter="{Binding}" TextColor="White" HorizontalOptions="End" VerticalOptions="End" HeightRequest="40" WidthRequest="120"/>
-                                        </Grid>
-                                    </Grid>
+                                        <VerticalStackLayout>
+                                            <Label Text="{Binding Name}" FontSize="15" MaximumWidthRequest="120" HorizontalTextAlignment="Center"  MaxLines="3"  Margin="0,20,0,0" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                                            <Label  Text="{Binding Price}" FontAttributes="Bold" FontSize="20" TextColor="#14abb2" HorizontalOptions="Center"/>
+                                            <Button FontSize="13"  Margin="20,100,10,0" BackgroundColor="#14abb2" Text="View Details" 
+                                                    Command="{Binding Source={x:Reference listView},Path=BindingContext.TourClickedCommand}" CommandParameter="{Binding}" TextColor="White" HeightRequest="40" WidthRequest="120"/>
+
+                                        </VerticalStackLayout>
+                                    </HorizontalStackLayout>
                                 </Border>
                                 
                             </ViewCell>

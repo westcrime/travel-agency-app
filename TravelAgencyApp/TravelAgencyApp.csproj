@@ -35,7 +35,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splashscreen.svg" Color="#512BD4" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -67,6 +67,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Acr.UserDialogs" Version="8.0.1" />
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
 	  <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
 	  <PackageReference Include="FirebaseDatabase.net" Version="4.2.0" />
@@ -75,8 +76,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="UserControl\FlyoutFooterContol.xaml.cs">
-	    <DependentUpon>FlyoutFooterContol.xaml</DependentUpon>
+	  <Compile Update="Views\LoginView.xaml.cs">
+	    <DependentUpon>LoginView.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="Views\DetailTourView.xaml.cs">
 	    <DependentUpon>DetailTourView.xaml</DependentUpon>
@@ -90,10 +91,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="UserControl\FlyoutFooterContol.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\AuthenticationView.xaml">
+	  <MauiXaml Update="Views\LoginView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\BasketView.xaml">
