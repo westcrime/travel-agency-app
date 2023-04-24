@@ -1,9 +1,9 @@
-﻿using Firebase.Auth;
-using Microsoft.Maui.ApplicationModel.Communication;
-using System.ComponentModel;
-using Acr.UserDialogs;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.Maui.Storage;
+using Firebase.Auth;
+using TravelAgencyApp.Models;
+using TravelAgencyApp.Services;
 using TravelAgencyApp.Views;
 
 namespace TravelAgencyApp.ViewModels
@@ -12,11 +12,15 @@ namespace TravelAgencyApp.ViewModels
     {
         [ObservableProperty]
         private string userEmail;
+
         [ObservableProperty]
         private string userPassword;
 
-        public RegisterViewModel() 
+        private DatabaseService databaseService;
+
+        public RegisterViewModel(DatabaseService databaseService) 
         {
+            this.databaseService = databaseService;
         }
         [RelayCommand]
         private async void BackToLogin(object obj)
@@ -35,15 +39,21 @@ namespace TravelAgencyApp.ViewModels
         {
             try
             {
+                IsBusy = true;
                 var auth = await App.authProvider.CreateUserWithEmailAndPasswordAsync(UserEmail, UserPassword);
                 string token = auth.FirebaseToken;
                 if (token != null)
                     await App.Current.MainPage.DisplayAlert("Success!", "User Registered successfully", "OK");
                 var auth1 = await App.authProvider.SignInWithEmailAndPasswordAsync(UserEmail, UserPassword);
-                App.User.Email = UserEmail;
-                App.User.Password = UserPassword;
-
-                await Shell.Current.GoToAsync($"//{nameof(MainMenu)}");
+                App.User = new Models.User()
+                {
+                    Id = auth1.User.LocalId,
+                    Email = UserEmail,
+                    Password = UserPassword
+                };
+                await this.databaseService.AddUserAsync(App.User);
+                await Shell.Current.GoToAsync($"//{nameof(MainMenu)}", true);
+                IsBusy = false;
             }
             catch (Exception ex)
             {

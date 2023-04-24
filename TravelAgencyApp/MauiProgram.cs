@@ -1,5 +1,6 @@
 ﻿using Acr.UserDialogs;
 using Microsoft.Extensions.DependencyInjection;
+using TravelAgencyApp.Services;
 using TravelAgencyApp.ViewModels;
 using TravelAgencyApp.Views;
 
@@ -18,17 +19,25 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-        builder.Services.AddSingleton<MenuShell>();
-        builder.Services.AddSingleton<AuthenticationView>();
-        builder.Services.AddSingleton<RegisterPageView>();
-        builder.Services.AddSingleton<ProfileView>();
-        builder.Services.AddSingleton<BasketView>();
-        builder.Services.AddSingleton<MainMenu>();
+        builder.Services.AddTransient<MenuShell>();
+        builder.Services.AddTransient<AuthenticationView>();
+        builder.Services.AddTransient<RegisterPageView>();
+        builder.Services.AddTransient<ProfileView>();
+        builder.Services.AddTransient<BasketView>();
+        builder.Services.AddTransient<MainMenu>();
+        builder.Services.AddTransient<EditToursView>();
+        builder.Services.AddTransient<SettingTourView>();
+        builder.Services.AddTransient<DetailTourView>();
 
-        builder.Services.AddSingleton<LoginViewModel>();
-        builder.Services.AddSingleton<RegisterViewModel>();
-        builder.Services.AddSingleton<MainMenuViewModel>();
-        builder.Services.AddSingleton<BasketViewModel>();
+        builder.Services.AddTransient<LoginViewModel>();
+        builder.Services.AddTransient<RegisterViewModel>();
+        builder.Services.AddTransient<MainMenuViewModel>();
+        builder.Services.AddTransient<BasketViewModel>();
+        builder.Services.AddTransient<SettingTourViewModel>();
+        builder.Services.AddTransient<DetailTourViewModel>();
+        builder.Services.AddTransient<EditToursViewModel>();
+
+        builder.Services.AddSingleton<DatabaseService>();
         return builder.Build();
 	}
 }

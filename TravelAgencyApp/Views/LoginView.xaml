@@ -1,7 +1,9 @@
 <ContentPage
     x:Class="TravelAgencyApp.Views.AuthenticationView"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:viewmodel="clr-namespace:TravelAgencyApp.ViewModels"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:DataType="viewmodel:LoginViewModel"
     BackgroundColor="{DynamicResource SecondaryColor}"
     NavigationPage.HasNavigationBar="False">
 
@@ -26,7 +28,7 @@
                     StrokeThickness="0"
                     Grid.Row="0"
                     Margin="25,250,25,150"
-                    BackgroundColor="White">
+                    BackgroundColor="{StaticResource Secondary}">
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="25" />
                     </Border.StrokeShape>
@@ -47,7 +49,7 @@
                             TextColor="Black" />
 
                         <Border Padding="8"
-                                BackgroundColor="White">
+                                BackgroundColor="{StaticResource Secondary}">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="25" />
                             </Border.StrokeShape>
@@ -67,7 +69,7 @@
                                 </Border>
 
                         <Border Padding="8"
-                                BackgroundColor="White">
+                                BackgroundColor="{StaticResource Secondary}">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="25" />
                             </Border.StrokeShape>
@@ -88,8 +90,9 @@
                         </Border>
                         <Button
                             x:Name="LoginBtn"
-                            BackgroundColor="LightSeaGreen"
-                            TextColor="White"
+                            IsEnabled="{Binding IsNotBusy}"
+                            BackgroundColor="{StaticResource Primary}"
+                            TextColor="{StaticResource Secondary}"
                             Command="{Binding LoginCommand}"
                             CornerRadius="20"
                             Text="Login" />
@@ -99,9 +102,10 @@
                             FontSize="14"
                             Text="Don't have an account?"/>
                         <Button
+                            IsEnabled="{Binding IsNotBusy}"
                             x:Name="RegisterBtn"
-                            BackgroundColor="LightSeaGreen"
-                            TextColor="White"
+                            BackgroundColor="{StaticResource Primary}"
+                            TextColor="{StaticResource Secondary}"
                             Command="{Binding RegisterCommand}"
                             CornerRadius="20"
                             Text="Register" />

@@ -32,7 +32,7 @@ namespace TravelAgencyApp.Data
             }
         }
 
-        public async void AddTourAsync(Tour tour)
+        public async Task AddTourAsync(Tour tour)
         {
             await client.SetAsync("Tours/" + tour.Id, tour);
         }
@@ -42,10 +42,8 @@ namespace TravelAgencyApp.Data
             await client.SetAsync("Users/" + user.Id + "/UserInfo", user);
         }
 
-        public async void RemoveTourAsync(Tour tour)
+        public async Task RemoveTourAsync(Tour tour)
         {
-            App.User.RemoveTourFromBook(tour);
-            await client.SetAsync("Users/" + App.User.Id, App.User);
             await client.DeleteAsync("Tours/" + tour.Id);
         }
 

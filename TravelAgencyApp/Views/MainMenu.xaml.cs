@@ -1,19 +1,40 @@
+using TravelAgencyApp.Models;
 using TravelAgencyApp.ViewModels;
 
 namespace TravelAgencyApp.Views;
 
 public partial class MainMenu : ContentPage
 {
-	public MainMenuViewModel viewModel;
-	public MainMenu()
+    private MainMenuViewModel viewModel;
+	public MainMenu(MainMenuViewModel viewModel)
 	{
 		InitializeComponent();
-		viewModel = new MainMenuViewModel(Navigation);
+        this.viewModel = viewModel;
         BindingContext = viewModel;
     }
 
     private async void MainMenu_OnLoaded(object sender, EventArgs e)
     {
-        await viewModel.LoadFromDatabase();
+        await viewModel.GetToursAsync();
+    }
+
+    private async void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
+    {
+        var tour = ((VisualElement)sender).BindingContext as Tour;
+        if (tour != null)
+        {
+            await Shell.Current.GoToAsync(nameof(DetailTourView), true, new Dictionary<string, object>
+            {
+                { "Tour", tour }
+            });
+        }
+    }
+
+    private async void MainMenu_OnNavigatedTo(object sender, NavigatedToEventArgs e)
+    {
+        if (App.NeedToRefreshTours)
+        {
+            await viewModel.GetToursAsync();
+        }
     }
 }

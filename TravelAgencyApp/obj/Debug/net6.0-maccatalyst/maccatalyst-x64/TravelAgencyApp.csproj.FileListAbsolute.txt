@@ -276,3 +276,5 @@ C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-m
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\ref\TravelAgencyApp.dll
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\user.png
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\mountains.jpg
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-maccatalyst\maccatalyst-x64\Acr.UserDialogs.dll
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\bin\Debug\net6.0-maccatalyst\maccatalyst-x64\BTProgressHUD.dll

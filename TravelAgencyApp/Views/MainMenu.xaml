@@ -1,53 +1,122 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:TravelAgencyApp.ViewModels"
+             xmlns:model="clr-namespace:TravelAgencyApp.Models"
              x:Class="TravelAgencyApp.Views.MainMenu"
+             x:DataType="viewmodel:MainMenuViewModel"
              Loaded="MainMenu_OnLoaded"
+             NavigatedTo="MainMenu_OnNavigatedTo"
              Shell.NavBarIsVisible="True"
              Title="Tours overview">
     <ContentPage.Content>
-        <ScrollView BackgroundColor="White">
-            <VerticalStackLayout Spacing="20">
-                <Border BackgroundColor="White" Margin="80,20,80,0" HeightRequest="60">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="30" ></RoundRectangle>
-                    </Border.StrokeShape>
-                    <Label Text="All Tours" TextColor="Black" FontSize="25" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"/>
-
-                </Border>
-               
-                <ListView x:Name="listView" Margin="0,10,0,0" RowHeight="300"
-                          ItemsSource="{Binding Tours}" SeparatorVisibility="None" SelectionMode="None">
-
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <Border BackgroundColor="White" Margin="10,10,10,10" Padding="20">
+        <Grid
+            ColumnDefinitions="*,*"
+            ColumnSpacing="5"
+            RowDefinitions="Auto,Auto,*,Auto"
+            RowSpacing="0"
+            BackgroundColor="{StaticResource Secondary}">
+            <Label Grid.ColumnSpan="2"
+                   Grid.Row="0"
+                   Text="All Tours"
+                   TextColor="Black"
+                   Margin="20,20,20,0"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"/>
+            <Label
+                Grid.ColumnSpan="2"
+                Grid.Row="1"
+                TextColor="Black"
+                Margin="20,20,20,0"
+                FontSize="20"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                Text ="{Binding Tours.Count, 
+                StringFormat='Number of tours: {0}'}"/>
+            
+            <CollectionView x:Name="CollectionView" 
+                            Grid.Row="2" 
+                            Grid.ColumnSpan="2" 
+                            Margin="0,10,0,0"
+                            ItemsSource="{Binding Tours}" 
+                            SelectionMode="None">
+                <CollectionView.EmptyView>
+                    <Label
+                        Text="No tours found!"
+                        TextColor="LightGray"
+                        FontSize="28"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"/>
+                </CollectionView.EmptyView>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Tour">
+                        <Border BackgroundColor="{StaticResource Tertiary}" Margin="10,10,10,10" Padding="20">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10" ></RoundRectangle>
+                            </Border.StrokeShape>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped"></TapGestureRecognizer>
+                            </Border.GestureRecognizers>
+                            <HorizontalStackLayout>
+                                <Border BackgroundColor="{StaticResource Secondary}" Margin="10,10,10,10" Grid.Column="0" Grid.RowSpan="3"  HeightRequest="200" WidthRequest="170" >
                                     <Border.StrokeShape>
-                                        <RoundRectangle CornerRadius="20" ></RoundRectangle>
+                                        <RoundRectangle CornerRadius="10" ></RoundRectangle>
                                     </Border.StrokeShape>
-                                    <HorizontalStackLayout>
-                                        <Border BackgroundColor="#e5f0e4" Margin="10,10,10,10" Grid.Column="0" Grid.RowSpan="3"  HeightRequest="200" WidthRequest="170" >
-                                            <Border.StrokeShape>
-                                                <RoundRectangle CornerRadius="20" ></RoundRectangle>
-                                            </Border.StrokeShape>
-                                            <Image Source="{Binding Picture}"  Aspect="AspectFill"/>
-                                        </Border>
-                                        <VerticalStackLayout>
-                                            <Label Text="{Binding Name}" FontSize="15" MaximumWidthRequest="120" HorizontalTextAlignment="Center"  MaxLines="3"  Margin="0,20,0,0" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
-                                            <Label  Text="{Binding Price}" FontAttributes="Bold" FontSize="20" TextColor="#14abb2" HorizontalOptions="Center"/>
-                                            <Button FontSize="13"  Margin="20,100,10,0" BackgroundColor="#14abb2" Text="View Details" 
-                                                    Command="{Binding Source={x:Reference listView},Path=BindingContext.TourClickedCommand}" CommandParameter="{Binding}" TextColor="White" HeightRequest="40" WidthRequest="120"/>
-
-                                        </VerticalStackLayout>
-                                    </HorizontalStackLayout>
+                                    <Image Source="{Binding Picture}"  Aspect="AspectFill"/>
                                 </Border>
-                                
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </VerticalStackLayout>
-        </ScrollView>
+                                <Grid
+                                    Margin="20"
+                                    HorizontalOptions="Center"
+                                    RowDefinitions="*,*">
+                                    <Label Text="{Binding Name}"
+                                           Grid.Row="0"
+                                           FontSize="18" 
+                                           MaximumWidthRequest="120"
+                                           HorizontalTextAlignment="Center"
+                                           VerticalOptions="Start"
+                                           MaxLines="3"  
+                                           Margin="0,20,0,0"
+                                           FontAttributes="Bold"
+                                           TextColor="Black"
+                                           HorizontalOptions="Center"/>
+                                    <Label 
+                                        Text="{Binding Price}"
+                                        FontAttributes="Bold"
+                                        Grid.Row="1"
+                                        FontSize="24" 
+                                        VerticalOptions="End"
+                                        TextColor="{StaticResource Primary}"
+                                        HorizontalOptions="Center"/>
+                                </Grid>
+                            </HorizontalStackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Button Margin="20"
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    Text="Edit Tours"
+                    BackgroundColor="{StaticResource Primary}"
+                    IsVisible="{Binding EditBtnIsVisible}"
+                    Command="{Binding EditToursClickedCommand}"
+                    IsEnabled="{Binding IsNotBusy}"
+                    TextColor="White"/>
+            <ActivityIndicator
+                IsVisible="{Binding IsBusy}"
+                IsRunning="{Binding IsBusy}"
+                Grid.RowSpan="3"
+                Grid.ColumnSpan="2"
+                BackgroundColor="Transparent"
+                Color="{StaticResource Primary}"
+                HeightRequest="100"
+                WidthRequest="100"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="CenterAndExpand"/>
+        </Grid>
+
     </ContentPage.Content>
 </ContentPage>

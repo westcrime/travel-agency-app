@@ -49,6 +49,7 @@
                                 <RoundRectangle CornerRadius="25" />
                             </Border.StrokeShape>
                             <Entry
+                                HeightRequest="40"
                                 IsTextPredictionEnabled = "False"
                                 IsSpellCheckEnabled="false"
                                 ClearButtonVisibility="WhileEditing"
@@ -65,6 +66,7 @@
                                 <RoundRectangle CornerRadius="25" />
                             </Border.StrokeShape>
                             <Entry
+                                HeightRequest="40"
                                 IsTextPredictionEnabled = "False"
                                 IsSpellCheckEnabled="false"
                                 ClearButtonVisibility="WhileEditing"
@@ -82,12 +84,14 @@
                             TextColor="White"
                             Command="{Binding RegisterUserCommand}"
                             CornerRadius="20"
+                            IsEnabled="{Binding IsNotBusy}"
                             Text="Register" />
 
 
                         <Button
                             BackgroundColor="LightSeaGreen"
                             TextColor="White"
+                            IsEnabled="{Binding IsNotBusy}"
                             Command="{Binding BackToLoginCommand}"
                             CornerRadius="20"
                             Text="Back to login page" />

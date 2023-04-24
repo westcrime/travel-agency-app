@@ -8,5 +8,8 @@ public partial class MenuShell : Shell
     {
         InitializeComponent();
         BindingContext = new MenuShellViewModel();
+        Routing.RegisterRoute(nameof(DetailTourView), typeof(DetailTourView));
+        Routing.RegisterRoute(nameof(EditToursView), typeof(EditToursView));
+        Routing.RegisterRoute(nameof(SettingTourView), typeof(SettingTourView));
     }
 }

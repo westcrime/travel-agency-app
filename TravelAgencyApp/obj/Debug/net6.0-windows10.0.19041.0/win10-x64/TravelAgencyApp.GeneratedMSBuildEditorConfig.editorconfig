@@ -40,6 +40,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.Deta
 build_metadata.AdditionalFiles.TargetPath = Views\DetailTourView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\DetailTourView.xaml
 
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Views/EditToursView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.EditToursView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EditToursView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EditToursView.xaml
+
 [C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Views/LoginView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.LoginView.xaml
@@ -69,3 +75,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.RegisterPageView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\RegisterPageView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\RegisterPageView.xaml
+
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Views/SettingTourView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.SettingTourView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SettingTourView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SettingTourView.xaml

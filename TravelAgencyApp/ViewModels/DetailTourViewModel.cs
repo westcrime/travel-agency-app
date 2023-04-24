@@ -1,48 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using TravelAgencyApp.Models;
 
 namespace TravelAgencyApp.ViewModels
 {
+    [QueryProperty(nameof(Tour), "Tour")]
     public partial class DetailTourViewModel : BaseViewModel
     {
         [ObservableProperty]
-        private Tour selectedTour;
-        [ObservableProperty]
-        private string name;
-        [ObservableProperty]
-        private string description;
-        [ObservableProperty]
-        private string price;
-        [ObservableProperty]
-        private string picture;
-        public DetailTourViewModel(Tour _selectedTour)
+        private Tour tour;
+
+        public DetailTourViewModel()
         {
-            selectedTour = _selectedTour;
-            name = selectedTour.Name;
-            description = selectedTour.Description;
-            price = selectedTour.Price;
-            picture = selectedTour.Picture;
         }
+
         [RelayCommand]
         private async void TourToBasket()
         {
-            foreach (var _tour in App.ToursInBasket)
+            foreach (var tour in App.User.ReservationBook)
             {
-                if (_tour.Id == selectedTour.Id)
+                if (tour == this.Tour.Id)
                 {
                     return;
                 }
             }
-            App.ToursInBasket.Add(selectedTour);
-            Preferences.Set("NeedToRefreshBasket", "True");
+            App.User.ReservationBook.Add(this.Tour.Id);
             await App.Current.MainPage.DisplayAlert("Success!", "Tour added to your basket.", "OK");
         }
     }

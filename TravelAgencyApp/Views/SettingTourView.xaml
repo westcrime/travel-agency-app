@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TravelAgencyApp.Views.SettingTourView">
+    <ContentPage.Content>
+        <VerticalStackLayout Spacing="20">
+            <Label Text="Enter data for tour" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <HorizontalStackLayout Spacing="20">
+                <Label Text="Enter the name of tour"></Label>
+                <Entry PlaceholderColor="{StaticResource Primary}" BackgroundColor="{StaticResource Secondary}" MaxLength="20" BindingContext="{}"></Entry>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="20">
+                <Label Text="Enter the description of tour"></Label>
+                <Entry PlaceholderColor="{StaticResource Primary}" BackgroundColor="{StaticResource Secondary}" MaxLength="150" BindingContext="{}"></Entry>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="20">
+                <Label Text="Enter the price of tour"></Label>
+                <Entry PlaceholderColor="{StaticResource Primary}" BackgroundColor="{StaticResource Secondary}" MaxLength="5" BindingContext="{}"></Entry>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>

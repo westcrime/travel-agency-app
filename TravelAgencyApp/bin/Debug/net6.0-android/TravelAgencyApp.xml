@@ -7,8 +7,8 @@
         <member name="P:TravelAgencyApp.ViewModels.BaseViewModel.IsBusy">
             <inheritdoc cref="F:TravelAgencyApp.ViewModels.BaseViewModel.isBusy"/>
         </member>
-        <member name="P:TravelAgencyApp.ViewModels.BasketViewModel.BasketTours">
-            <inheritdoc cref="F:TravelAgencyApp.ViewModels.BasketViewModel.basketTours"/>
+        <member name="P:TravelAgencyApp.ViewModels.BasketViewModel.Tours">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.BasketViewModel.tours"/>
         </member>
         <member name="P:TravelAgencyApp.ViewModels.BasketViewModel.Cost">
             <inheritdoc cref="F:TravelAgencyApp.ViewModels.BasketViewModel.cost"/>
@@ -19,26 +19,38 @@
         <member name="P:TravelAgencyApp.ViewModels.BasketViewModel.DeleteTourCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.BasketViewModel.DeleteTour(TravelAgencyApp.Models.Tour)"/>.</summary>
         </member>
-        <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.SelectedTour">
-            <inheritdoc cref="F:TravelAgencyApp.ViewModels.DetailTourViewModel.selectedTour"/>
-        </member>
-        <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.Name">
-            <inheritdoc cref="F:TravelAgencyApp.ViewModels.DetailTourViewModel.name"/>
-        </member>
-        <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.Description">
-            <inheritdoc cref="F:TravelAgencyApp.ViewModels.DetailTourViewModel.description"/>
-        </member>
-        <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.Price">
-            <inheritdoc cref="F:TravelAgencyApp.ViewModels.DetailTourViewModel.price"/>
-        </member>
-        <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.Picture">
-            <inheritdoc cref="F:TravelAgencyApp.ViewModels.DetailTourViewModel.picture"/>
+        <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.Tour">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.DetailTourViewModel.tour"/>
         </member>
         <member name="F:TravelAgencyApp.ViewModels.DetailTourViewModel.tourToBasketCommand">
             <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.DetailTourViewModel.TourToBasketCommand"/>.</summary>
         </member>
         <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.TourToBasketCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.DetailTourViewModel.TourToBasket"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.EditToursViewModel.Tours">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.EditToursViewModel.tours"/>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.EditToursViewModel.Tour">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.EditToursViewModel.tour"/>
+        </member>
+        <member name="F:TravelAgencyApp.ViewModels.EditToursViewModel.deleteTourCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.EditToursViewModel.DeleteTourCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.EditToursViewModel.DeleteTourCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.EditToursViewModel.DeleteTour(TravelAgencyApp.Models.Tour)"/>.</summary>
+        </member>
+        <member name="F:TravelAgencyApp.ViewModels.EditToursViewModel.editTourCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.EditToursViewModel.EditTourCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.EditToursViewModel.EditTourCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.EditToursViewModel.EditTour(TravelAgencyApp.Models.Tour)"/>.</summary>
+        </member>
+        <member name="F:TravelAgencyApp.ViewModels.EditToursViewModel.addTourCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.EditToursViewModel.AddTourCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.EditToursViewModel.AddTourCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.EditToursViewModel.AddTour"/>.</summary>
         </member>
         <member name="P:TravelAgencyApp.ViewModels.LoginViewModel.UserEmail">
             <inheritdoc cref="F:TravelAgencyApp.ViewModels.LoginViewModel.userEmail"/>
@@ -61,11 +73,14 @@
         <member name="P:TravelAgencyApp.ViewModels.MainMenuViewModel.SelectedTour">
             <inheritdoc cref="F:TravelAgencyApp.ViewModels.MainMenuViewModel.selectedTour"/>
         </member>
-        <member name="F:TravelAgencyApp.ViewModels.MainMenuViewModel.tourClickedCommand">
-            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.MainMenuViewModel.TourClickedCommand"/>.</summary>
+        <member name="P:TravelAgencyApp.ViewModels.MainMenuViewModel.EditBtnIsVisible">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.MainMenuViewModel.editBtnIsVisible"/>
         </member>
-        <member name="P:TravelAgencyApp.ViewModels.MainMenuViewModel.TourClickedCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.MainMenuViewModel.TourClicked(TravelAgencyApp.Models.Tour)"/>.</summary>
+        <member name="F:TravelAgencyApp.ViewModels.MainMenuViewModel.editToursClickedCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.MainMenuViewModel.EditToursClickedCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.MainMenuViewModel.EditToursClickedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.MainMenuViewModel.EditToursClicked"/>.</summary>
         </member>
         <member name="P:TravelAgencyApp.ViewModels.MenuShellViewModel.UserEmail">
             <inheritdoc cref="F:TravelAgencyApp.ViewModels.MenuShellViewModel._userEmail"/>
@@ -87,6 +102,9 @@
         </member>
         <member name="P:TravelAgencyApp.ViewModels.RegisterViewModel.RegisterUserCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.RegisterViewModel.RegisterUser(System.Object)"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.SettingTourViewModel.Tour">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.SettingTourViewModel.tour"/>
         </member>
     </members>
 </doc>

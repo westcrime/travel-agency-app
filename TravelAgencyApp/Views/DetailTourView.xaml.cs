@@ -10,11 +10,9 @@ namespace TravelAgencyApp.Views;
 
 public partial class DetailTourView : ContentPage
 {
-    private DetailTourViewModel detailTourViewModel;
-    public DetailTourView(Tour SelectedTour)
+    public DetailTourView(DetailTourViewModel detailTourViewModel)
     {
         InitializeComponent();
-        detailTourViewModel = new DetailTourViewModel(SelectedTour);
         BindingContext = detailTourViewModel;
     }
 }

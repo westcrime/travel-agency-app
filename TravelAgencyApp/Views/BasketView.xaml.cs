@@ -15,6 +15,6 @@ public partial class BasketView : ContentPage
 
     private void BasketView_NavigatedTo(object sender, EventArgs e)
     {
-        _viewModel.UpdateBasket();
+        _viewModel.GetToursAsync();
     }
 }

@@ -3,48 +3,70 @@ using System.Diagnostics.Metrics;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using TravelAgencyApp.Models;
+using TravelAgencyApp.Services;
 
 namespace TravelAgencyApp.ViewModels
 {
     public partial class BasketViewModel : BaseViewModel
     {
         [ObservableProperty]
-        public ObservableCollection<Tour> basketTours;
+        public ObservableCollection<Tour> tours;
 
         [ObservableProperty] 
         public string cost;
 
-        public BasketViewModel()
+        private DatabaseService databaseService;
+
+        public BasketViewModel(DatabaseService databaseService)
         {
+            this.databaseService = databaseService;
             cost = "0$";
-            BasketTours = new ObservableCollection<Tour>();
-            var tours = new List<Tour>();
-            foreach (var tour in App.ToursInBasket)
+            Tours = new ObservableCollection<Tour>();
+        }
+
+        public async Task GetToursAsync()
+        {
+            try
             {
-                basketTours.Add(tour);
+                if (IsBusy)
+                    return;
+
+                IsBusy = true;
+
+                if (Tours.Count != 0)
+                    Tours.Clear();
+
+                foreach (var tour in App.User.ReservationBook)
+                {
+                    Tours.Add(await this.databaseService.GetTourAsync(tour));
+                }
+
+                if (Tours == null)
+                    return;
+
+                double _cost = 0;
+
+                foreach (var tour in Tours)
+                {
+                    _cost += Convert.ToDouble(tour.Price.Remove(tour.Price.Length - 1, 1));
+                }
+                Cost = _cost.ToString() + '$';
+            }
+            catch (Exception ex)
+            {
+                await App.Current.MainPage.DisplayAlert("Alert", ex.Message, "OK");
+            }
+            finally
+            {
+                IsBusy = false;
             }
         }
 
-        public void UpdateBasket()
-        {
-            BasketTours = new ObservableCollection<Tour>();
-            foreach (var tour in App.ToursInBasket)
-            {
-                BasketTours.Add(tour);
-            }
-            double _cost = 0;
-            foreach (var tour in BasketTours)
-            {
-                _cost += Convert.ToDouble(tour.Price.Remove(tour.Price.Length - 1, 1));
-            }
-            Cost = _cost.ToString() + '$';
-        }
         [RelayCommand]
         private async void DeleteTour(Tour obj)
         {
-            BasketTours.Remove(obj);
-            App.ToursInBasket.Remove(obj);
-            this.UpdateBasket();
+            Tours.Remove(obj);
+            App.User.ReservationBook.Remove(obj.Id);
         }
     }
 }

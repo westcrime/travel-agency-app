@@ -3,55 +3,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace TravelAgencyApp.Models
 {
     public class User
     {
-        private string _email;
-        private string _password;
+        [JsonProperty(PropertyName = "Email")]
+        public string Email;
+        [JsonProperty(PropertyName = "Password")]
+        public string Password;
+        [JsonProperty(PropertyName = "Id")]
         public string Id;
-        private List<string> _reservationBook;
+        [JsonProperty(PropertyName = "ReservationBook")]
+        public List<string> ReservationBook;
 
-        public User(string email,string password)
+        public User(string email,string password, string id)
         {
-            _email = email;
-            _password = password;
-            _reservationBook = new List<string>();
+            Id = id;
+            Email = email;
+            Password = password;
+            ReservationBook = new List<string>();
         }
 
         public User()
         {
-            Id = Guid.NewGuid().ToString();
+            ReservationBook = new List<string>();
         }
 
         public void AddTourToBook(Tour tour)
         {
-            _reservationBook.Add(tour.Id);
+            ReservationBook.Add(tour.Id);
         }
 
         public void RemoveTourFromBook(Tour tour)
         {
-            _reservationBook.Remove(tour.Id);
-        }
-
-        public event System.EventHandler UserPropertiesChanged;
-
-        public string Email {
-            get { return _email; }
-            set
-            {
-                _email = value;
-                UserPropertiesChanged?.Invoke(this, EventArgs.Empty);
-            }
-        }
-        public string Password { 
-            get { return _password; }
-            set
-            {
-                _password = value;
-                UserPropertiesChanged?.Invoke(this, EventArgs.Empty);
-            }
+            ReservationBook.Remove(tour.Id);
         }
     }
 }

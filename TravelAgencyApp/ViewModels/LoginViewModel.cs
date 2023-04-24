@@ -1,15 +1,17 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using TravelAgencyApp.Services;
 using TravelAgencyApp.Views;
 
 namespace TravelAgencyApp.ViewModels
 {
     public partial class LoginViewModel : BaseViewModel
     {
+        DatabaseService databaseService;
         [RelayCommand]
         private async void Register(object obj)
         {
-            await Shell.Current.GoToAsync($"//{nameof(RegisterPageView)}");
+            await Shell.Current.GoToAsync($"//{nameof(RegisterPageView)}", true);
         }
 
         [RelayCommand]
@@ -17,10 +19,11 @@ namespace TravelAgencyApp.ViewModels
         {
             try
             {
+                IsBusy = true;
                 var auth = await App.authProvider.SignInWithEmailAndPasswordAsync(UserEmail, UserPassword);
-                App.User.Email = UserEmail;
-                App.User.Password = UserPassword;
-                await Shell.Current.GoToAsync($"//{nameof(ProfileView)}");
+                App.User = await this.databaseService.GetUserAsync(auth.User.LocalId);
+                await Shell.Current.GoToAsync($"//{nameof(ProfileView)}", true);
+                IsBusy = false;
             }
             catch (Exception ex)
             {
@@ -33,8 +36,9 @@ namespace TravelAgencyApp.ViewModels
 
         [ObservableProperty]
         public string userPassword;
-        public LoginViewModel()
+        public LoginViewModel(DatabaseService databaseService)
         {
+            this.databaseService = databaseService;
             UserEmail = "admin@admin.com";
             UserPassword = "123123";
         }
