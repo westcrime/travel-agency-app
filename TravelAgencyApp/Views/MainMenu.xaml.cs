@@ -13,7 +13,7 @@ public partial class MainMenu : ContentPage
         BindingContext = viewModel;
     }
 
-    private async void MainMenu_OnLoaded(object sender, EventArgs e)
+    private async void MainMenu_OnNavigated(object sender, EventArgs e)
     {
         await viewModel.GetToursAsync();
     }
@@ -27,14 +27,6 @@ public partial class MainMenu : ContentPage
             {
                 { "Tour", tour }
             });
-        }
-    }
-
-    private async void MainMenu_OnNavigatedTo(object sender, NavigatedToEventArgs e)
-    {
-        if (App.NeedToRefreshTours)
-        {
-            await viewModel.GetToursAsync();
         }
     }
 }

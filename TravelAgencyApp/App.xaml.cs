@@ -1,6 +1,4 @@
-﻿using System.Collections.ObjectModel;
-using Acr.UserDialogs;
-using Firebase.Auth;
+﻿using Firebase.Auth;
 using TravelAgencyApp.Models;
 using TravelAgencyApp.Views;
 using TravelAgencyApp.Data;
@@ -10,15 +8,18 @@ namespace TravelAgencyApp;
 public partial class App : Application
 {
     public static Models.User User;
-    public static bool NeedToRefreshTours;
     private string webApiKey = "AIzaSyC0spDZvY5wOLonDHlgZdWxqdNjjmbaNw8";
+    public static string Token;
     public static FirebaseAuthProvider authProvider;
+    public static FireBaseService firebase;
     public App()
     {
-        NeedToRefreshTours = false;
         authProvider = new FirebaseAuthProvider(new FirebaseConfig(webApiKey));
+        firebase = new FireBaseService();
         InitializeComponent();
-        //AddTours();
+        AddTours();
+        AddTours();
+        AddTours();
         MainPage = new MenuShell();
     }
 
@@ -64,10 +65,10 @@ public partial class App : Application
             Picture = "mountains.jpg",
             Price = "699$"
         };
-        //await App.firebase.AddTourAsync(tour1);
-        //await App.firebase.AddTourAsync(tour2);
-        //await App.firebase.AddTourAsync(tour3);
-        //await App.firebase.AddTourAsync(tour4);
-        //await App.firebase.AddTourAsync(tour5);
+        await App.firebase.AddTourAsync(tour1);
+        await App.firebase.AddTourAsync(tour2);
+        await App.firebase.AddTourAsync(tour3);
+        await App.firebase.AddTourAsync(tour4);
+        await App.firebase.AddTourAsync(tour5);
     }
 }

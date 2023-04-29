@@ -1,26 +1,109 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:TravelAgencyApp.ViewModels"
              x:Class="TravelAgencyApp.Views.ProfileView"
+             x:DataType="viewmodel:ProfileViewModel"
              Title="Profile"
              BackgroundColor="White">
-    <VerticalStackLayout Margin="20,40,20,40" Padding="10" BackgroundColor="White">
-        <Border HeightRequest="200" WidthRequest="200" HorizontalOptions="Center" BackgroundColor="{StaticResource Secondary}" StrokeThickness="2">
+
+    <Grid 
+        BackgroundColor="{StaticResource Secondary}"
+        RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+        ColumnDefinitions="150,*"
+        Padding="20"
+        RowSpacing="40">
+
+        <Border 
+            Grid.ColumnSpan="2"
+            Grid.Row="0"
+            HeightRequest="150"
+            WidthRequest="150"
+            HorizontalOptions="Center"
+            BackgroundColor="{StaticResource Secondary}" 
+            StrokeThickness="2">
+
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="100"/>
             </Border.StrokeShape>
-            <Image Source="user.png" Aspect="AspectFill"/>
+
+            <Image
+                Source="user.png" 
+                Aspect="AspectFill"/>
         </Border>
-        <Border BackgroundColor="{StaticResource Secondary}" Margin="30" Padding="20" WidthRequest="350">
-            <Border.StrokeShape>
-                <RoundRectangle CornerRadius="10"/>
-            </Border.StrokeShape>
-            <HorizontalStackLayout>
-                <Label Text="Email: " FontSize="18" TextColor="Black"></Label>
-                <Label Text="{Binding}"></Label>
-                <Button></Button>
-            </HorizontalStackLayout>
-        </Border>
-    </VerticalStackLayout>
+
+        <Label
+            VerticalOptions="Center"
+            FontSize="20"
+            TextColor="Black"
+            Grid.Row="1"
+            Grid.Column="0"
+            Text="Email"/>
+
+        <Label
+            VerticalOptions="Center"
+            FontSize="20"
+            TextColor="Black"
+            Grid.Row="1"
+            Grid.Column="1"
+            Text="{Binding UserEmail}"/>
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="1"
+            Text="Change Email"
+            IsEnabled="{Binding IsNotBusy}"
+            BackgroundColor="{StaticResource Primary}"
+            Command="{Binding ChangeEmailCommand}"
+            TextColor="White">
+        </Button>
+
+        <Label
+            VerticalOptions="Center"
+            FontSize="20"
+            TextColor="Black"
+            Grid.Row="3"
+            Grid.Column="0"
+            Text="Password"/>
+        
+        <Button
+            Grid.Row="3"
+            Grid.Column="1"
+            Text="Change Password"
+            IsEnabled="{Binding IsNotBusy}"
+            BackgroundColor="{StaticResource Primary}"
+            TextColor="White">
+        </Button>   
+
+        <Label
+            VerticalOptions="Center"
+            FontSize="20"
+            TextColor="Black"
+            Grid.Row="4"
+            Grid.Column="0"
+            Text="Balance"/>
+
+        <Button
+            Grid.Row="4"
+            Grid.Column="1"
+            Text="Put money on balance"
+            IsEnabled="{Binding IsNotBusy}"
+            BackgroundColor="{StaticResource Primary}"
+            TextColor="White">
+        </Button>
+
+        <ActivityIndicator
+            IsVisible="{Binding IsBusy}"
+            IsRunning="{Binding IsBusy}"
+            Grid.RowSpan="5"
+            Grid.ColumnSpan="2"
+            BackgroundColor="Transparent"
+            Color="{StaticResource PrimaryDark}"
+            HeightRequest="100"
+            WidthRequest="100"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="CenterAndExpand"/>
+
+    </Grid>
 
 </ContentPage>

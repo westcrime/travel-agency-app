@@ -36,6 +36,7 @@ public static class MauiProgram
         builder.Services.AddTransient<SettingTourViewModel>();
         builder.Services.AddTransient<DetailTourViewModel>();
         builder.Services.AddTransient<EditToursViewModel>();
+        builder.Services.AddTransient<ProfileViewModel>();
 
         builder.Services.AddSingleton<DatabaseService>();
         return builder.Build();

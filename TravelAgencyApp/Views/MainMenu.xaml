@@ -5,8 +5,7 @@
              xmlns:model="clr-namespace:TravelAgencyApp.Models"
              x:Class="TravelAgencyApp.Views.MainMenu"
              x:DataType="viewmodel:MainMenuViewModel"
-             Loaded="MainMenu_OnLoaded"
-             NavigatedTo="MainMenu_OnNavigatedTo"
+             NavigatedTo="MainMenu_OnNavigated"
              Shell.NavBarIsVisible="True"
              Title="Tours overview">
     <ContentPage.Content>
@@ -53,7 +52,9 @@
                 </CollectionView.EmptyView>
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Tour">
-                        <Border BackgroundColor="{StaticResource Tertiary}" Margin="10,10,10,10" Padding="20">
+                        <Border BackgroundColor="{StaticResource Tertiary}"
+                                Margin="10,10,10,10"
+                                Padding="20">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="10" ></RoundRectangle>
                             </Border.StrokeShape>
@@ -111,7 +112,7 @@
                 Grid.RowSpan="3"
                 Grid.ColumnSpan="2"
                 BackgroundColor="Transparent"
-                Color="{StaticResource Primary}"
+                Color="{StaticResource PrimaryDark}"
                 HeightRequest="100"
                 WidthRequest="100"
                 HorizontalOptions="FillAndExpand"

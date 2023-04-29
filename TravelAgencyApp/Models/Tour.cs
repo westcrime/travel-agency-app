@@ -24,5 +24,14 @@ namespace TravelAgencyApp.Models
         {
             Id = Guid.NewGuid().ToString();
         }
+
+        public Tour(string name, string description, string price, string picture)
+        {
+            Id = Guid.NewGuid().ToString();
+            Name = name;
+            Description = description;
+            Price = price;
+            Picture = picture;
+        }
     }
 }

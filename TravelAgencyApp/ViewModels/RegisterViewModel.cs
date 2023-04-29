@@ -45,6 +45,7 @@ namespace TravelAgencyApp.ViewModels
                 if (token != null)
                     await App.Current.MainPage.DisplayAlert("Success!", "User Registered successfully", "OK");
                 var auth1 = await App.authProvider.SignInWithEmailAndPasswordAsync(UserEmail, UserPassword);
+                App.Token = auth1.FirebaseToken;
                 App.User = new Models.User()
                 {
                     Id = auth1.User.LocalId,
@@ -53,11 +54,14 @@ namespace TravelAgencyApp.ViewModels
                 };
                 await this.databaseService.AddUserAsync(App.User);
                 await Shell.Current.GoToAsync($"//{nameof(MainMenu)}", true);
-                IsBusy = false;
             }
             catch (Exception ex)
             {
                 await App.Current.MainPage.DisplayAlert("Alert", ex.Message, "OK");
+            }
+            finally
+            {
+                IsBusy = false;
             }
         }
     }

@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net7.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TravelAgencyApp
+build_property.ProjectDir = C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\
+
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Views/BasketView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.BasketView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BasketView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BasketView.xaml
+
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Views/DetailTourView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.DetailTourView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetailTourView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetailTourView.xaml
+
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Views/EditToursView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.EditToursView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EditToursView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EditToursView.xaml
+
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Views/LoginView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.LoginView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginView.xaml
+
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Views/MainMenu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.MainMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MainMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MainMenu.xaml
+
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Views/MenuShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.MenuShell.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MenuShell.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MenuShell.xaml
+
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Views/ProfileView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.ProfileView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProfileView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProfileView.xaml
+
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Views/RegisterPageView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.RegisterPageView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegisterPageView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegisterPageView.xaml
+
+[C:/Users/westcrime/course_2/travel-agency-app/TravelAgencyApp/Views/SettingTourView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TravelAgencyApp.Views.SettingTourView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SettingTourView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SettingTourView.xaml

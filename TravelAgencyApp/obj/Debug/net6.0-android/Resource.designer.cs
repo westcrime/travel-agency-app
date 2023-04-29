@@ -14352,22 +14352,25 @@ namespace TravelAgencyApp
 			public const int signout = 2131165349;
 			
 			// aapt resource value: 0x7F0700A6
-			public const int splashscreen = 2131165350;
+			public const int splash = 2131165350;
 			
 			// aapt resource value: 0x7F0700A7
-			public const int test_custom_background = 2131165351;
+			public const int splashscreen = 2131165351;
 			
 			// aapt resource value: 0x7F0700A8
-			public const int test_level_drawable = 2131165352;
+			public const int test_custom_background = 2131165352;
 			
 			// aapt resource value: 0x7F0700A9
-			public const int tooltip_frame_dark = 2131165353;
+			public const int test_level_drawable = 2131165353;
 			
 			// aapt resource value: 0x7F0700AA
-			public const int tooltip_frame_light = 2131165354;
+			public const int tooltip_frame_dark = 2131165354;
 			
 			// aapt resource value: 0x7F0700AB
-			public const int user = 2131165355;
+			public const int tooltip_frame_light = 2131165355;
+			
+			// aapt resource value: 0x7F0700AC
+			public const int user = 2131165356;
 			
 			static Drawable()
 			{
@@ -16634,6 +16637,18 @@ namespace TravelAgencyApp
 			// aapt resource value: 0x7F0D0000
 			public const int appicon = 2131558400;
 			
+			// aapt resource value: 0x7F0D0004
+			public const int appiconfg = 2131558404;
+			
+			// aapt resource value: 0x7F0D0005
+			public const int appiconfg_background = 2131558405;
+			
+			// aapt resource value: 0x7F0D0006
+			public const int appiconfg_foreground = 2131558406;
+			
+			// aapt resource value: 0x7F0D0007
+			public const int appiconfg_round = 2131558407;
+			
 			// aapt resource value: 0x7F0D0001
 			public const int appicon_background = 2131558401;
 			
@@ -16642,6 +16657,30 @@ namespace TravelAgencyApp
 			
 			// aapt resource value: 0x7F0D0003
 			public const int appicon_round = 2131558403;
+			
+			// aapt resource value: 0x7F0D0008
+			public const int luggage = 2131558408;
+			
+			// aapt resource value: 0x7F0D0009
+			public const int luggage_background = 2131558409;
+			
+			// aapt resource value: 0x7F0D000A
+			public const int luggage_foreground = 2131558410;
+			
+			// aapt resource value: 0x7F0D000B
+			public const int luggage_round = 2131558411;
+			
+			// aapt resource value: 0x7F0D000C
+			public const int splashscreen = 2131558412;
+			
+			// aapt resource value: 0x7F0D000D
+			public const int splashscreen_background = 2131558413;
+			
+			// aapt resource value: 0x7F0D000E
+			public const int splashscreen_foreground = 2131558414;
+			
+			// aapt resource value: 0x7F0D000F
+			public const int splashscreen_round = 2131558415;
 			
 			static Mipmap()
 			{

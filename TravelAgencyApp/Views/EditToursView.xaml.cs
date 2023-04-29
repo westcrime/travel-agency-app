@@ -1,4 +1,5 @@
-﻿using TravelAgencyApp.ViewModels;
+﻿using TravelAgencyApp.Models;
+using TravelAgencyApp.ViewModels;
 
 namespace TravelAgencyApp.Views;
 
@@ -11,8 +12,9 @@ public partial class EditToursView : ContentPage
         this.viewModel = editToursViewModel;
         BindingContext = viewModel;
     }
-    private async void EditToursView_OnAppearing(object sender, EventArgs e)
+    private async void EditToursView_NavigatedTo(object sender, EventArgs e)
     {
         await viewModel.GetToursAsync();
     }
+
 }

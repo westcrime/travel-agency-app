@@ -11176,12 +11176,13 @@ public final class R {
     public static final int roundedbg=0x7f0700a3;
     public static final int roundedbgdark=0x7f0700a4;
     public static final int signout=0x7f0700a5;
-    public static final int splashscreen=0x7f0700a6;
-    public static final int test_custom_background=0x7f0700a7;
-    public static final int test_level_drawable=0x7f0700a8;
-    public static final int tooltip_frame_dark=0x7f0700a9;
-    public static final int tooltip_frame_light=0x7f0700aa;
-    public static final int user=0x7f0700ab;
+    public static final int splash=0x7f0700a6;
+    public static final int splashscreen=0x7f0700a7;
+    public static final int test_custom_background=0x7f0700a8;
+    public static final int test_level_drawable=0x7f0700a9;
+    public static final int tooltip_frame_dark=0x7f0700aa;
+    public static final int tooltip_frame_light=0x7f0700ab;
+    public static final int user=0x7f0700ac;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
@@ -11926,6 +11927,18 @@ public final class R {
     public static final int appicon_background=0x7f0d0001;
     public static final int appicon_foreground=0x7f0d0002;
     public static final int appicon_round=0x7f0d0003;
+    public static final int appiconfg=0x7f0d0004;
+    public static final int appiconfg_background=0x7f0d0005;
+    public static final int appiconfg_foreground=0x7f0d0006;
+    public static final int appiconfg_round=0x7f0d0007;
+    public static final int luggage=0x7f0d0008;
+    public static final int luggage_background=0x7f0d0009;
+    public static final int luggage_foreground=0x7f0d000a;
+    public static final int luggage_round=0x7f0d000b;
+    public static final int splashscreen=0x7f0d000c;
+    public static final int splashscreen_background=0x7f0d000d;
+    public static final int splashscreen_foreground=0x7f0d000e;
+    public static final int splashscreen_round=0x7f0d000f;
   }
   public static final class plurals {
     public static final int mtrl_badge_content_description=0x7f0e0000;

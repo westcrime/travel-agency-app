@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using TravelAgencyApp.Models;
+using TravelAgencyApp.Services;
 
 namespace TravelAgencyApp.ViewModels
 {
@@ -10,8 +11,11 @@ namespace TravelAgencyApp.ViewModels
         [ObservableProperty]
         private Tour tour;
 
-        public DetailTourViewModel()
+        private DatabaseService databaseService;
+
+        public DetailTourViewModel(DatabaseService databaseService)
         {
+            this.databaseService = databaseService;
         }
 
         [RelayCommand]
@@ -25,6 +29,7 @@ namespace TravelAgencyApp.ViewModels
                 }
             }
             App.User.ReservationBook.Add(this.Tour.Id);
+            this.databaseService.AddUserAsync(App.User);
             await App.Current.MainPage.DisplayAlert("Success!", "Tour added to your basket.", "OK");
         }
     }

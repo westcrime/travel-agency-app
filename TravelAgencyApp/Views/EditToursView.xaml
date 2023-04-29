@@ -6,7 +6,7 @@
              xmlns:model="clr-namespace:TravelAgencyApp.Models"
              x:Class="TravelAgencyApp.Views.EditToursView"
              x:DataType="viewmodel:EditToursViewModel"
-             Appearing="EditToursView_OnAppearing"
+             NavigatedTo="EditToursView_NavigatedTo"
              Title="Editing tours">
     <ContentPage.Content>
         <Grid
@@ -41,7 +41,7 @@
             <CollectionView 
                 Grid.ColumnSpan="2"
                 Grid.Row="2"
-                x:Name="listView"
+                x:Name="CollectionView"
                 ItemsSource="{Binding Tours}"
                 SelectionMode="None">
 
@@ -58,10 +58,11 @@
                                 Margin="10"
                                 Padding="10" 
                                 RowDefinitions="*,*" 
-                                ColumnDefinitions="100,120,*">
+                                ColumnDefinitions="100,150,*">
                                 <Border 
                                     HeightRequest="80"
                                     WidthRequest="80"
+                                    Grid.Row="0"
                                     Grid.RowSpan="2" 
                                     BackgroundColor="White">
                                     <Border.StrokeShape>
@@ -88,38 +89,41 @@
                                         Padding="10,0,0,0"
                                         FontAttributes="Bold"
                                         FontSize="20"
-                                        TextColor="#14abb2"/>
+                                        TextColor="{StaticResource Primary}"/>
                                 </StackLayout>
                                 <VerticalStackLayout 
                                     Grid.Row="0"
                                     Grid.Column="3"
                                     Spacing="5"
                                     VerticalOptions="Start">
+                                    <Button 
+                                        FontSize="15"
+                                        Command="{Binding Source={x:Reference CollectionView},
+                                        Path=BindingContext.EditTourCommand}"
+                                        CommandParameter="{Binding}"
+                                        BackgroundColor="{StaticResource Primary}"
+
+                                        Text="Edit" 
+                                        TextColor="White"
+                                        HorizontalOptions="End" 
+                                        HeightRequest="40" 
+                                        WidthRequest="80" />
                                     <Button
                                         FontSize="15" 
-                                        Command="{Binding Source={x:Reference listView},
+                                        Command="{Binding Source={x:Reference CollectionView},
                                         Path=BindingContext.DeleteTourCommand}"
                                         CommandParameter="{Binding}" 
                                         BackgroundColor="MediumVioletRed" 
                                         Text="Delete"
                                         TextColor="White"
                                         HorizontalOptions="End"
+                                        VerticalOptions="Center"
                                         HeightRequest="40"
-                                        WidthRequest="80" />
-                                    <Button 
-                                        FontSize="15"
-                                        Command="{Binding Source={x:Reference listView},Path=BindingContext.EditTourCommand}"
-                                        CommandParameter="{Binding}"
-                                        BackgroundColor="{StaticResource Primary}"
-                                        Text="Edit" TextColor="White"
-                                        HorizontalOptions="End" 
-                                        HeightRequest="40" 
                                         WidthRequest="80" />
                                 </VerticalStackLayout>
                             </Grid>
                         </Border>
                     </DataTemplate>
-
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
@@ -142,7 +146,7 @@
                 Grid.RowSpan="3"
                 Grid.ColumnSpan="2"
                 BackgroundColor="Transparent"
-                Color="{StaticResource Primary}"
+                Color="{StaticResource PrimaryDark}"
                 HeightRequest="100"
                 WidthRequest="100"
                 HorizontalOptions="FillAndExpand"

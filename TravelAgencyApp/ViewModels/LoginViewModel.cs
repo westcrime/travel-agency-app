@@ -21,13 +21,17 @@ namespace TravelAgencyApp.ViewModels
             {
                 IsBusy = true;
                 var auth = await App.authProvider.SignInWithEmailAndPasswordAsync(UserEmail, UserPassword);
+                App.Token = auth.FirebaseToken;
                 App.User = await this.databaseService.GetUserAsync(auth.User.LocalId);
                 await Shell.Current.GoToAsync($"//{nameof(ProfileView)}", true);
-                IsBusy = false;
             }
             catch (Exception ex)
             {
                 await App.Current.MainPage.DisplayAlert("Alert", ex.Message, "OK");
+            }
+            finally
+            {
+                IsBusy = false;
             }
         }
 

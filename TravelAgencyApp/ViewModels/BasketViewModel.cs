@@ -15,12 +15,16 @@ namespace TravelAgencyApp.ViewModels
         [ObservableProperty] 
         public string cost;
 
+        [ObservableProperty]
+        public string balance;
+
         private DatabaseService databaseService;
 
         public BasketViewModel(DatabaseService databaseService)
         {
             this.databaseService = databaseService;
-            cost = "0$";
+            Cost = "0$";
+            Balance = "0$";
             Tours = new ObservableCollection<Tour>();
         }
 
@@ -43,6 +47,8 @@ namespace TravelAgencyApp.ViewModels
 
                 if (Tours == null)
                     return;
+
+                Balance = App.User.Balance.ToString() + '$';
 
                 double _cost = 0;
 
@@ -67,6 +73,7 @@ namespace TravelAgencyApp.ViewModels
         {
             Tours.Remove(obj);
             App.User.ReservationBook.Remove(obj.Id);
+            await databaseService.AddUserAsync(App.User);
         }
     }
 }

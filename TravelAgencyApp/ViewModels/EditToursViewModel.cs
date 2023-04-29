@@ -55,6 +55,7 @@ namespace TravelAgencyApp.ViewModels
         [RelayCommand]
         private async void DeleteTour(Tour tour)
         {
+            IsBusy = true;
             Tours.Remove(tour);
             await databaseService.RemoveTourAsync(tour);
             if (App.User.ReservationBook.Contains(tour.Id))
@@ -63,7 +64,7 @@ namespace TravelAgencyApp.ViewModels
                 await databaseService.AddUserAsync(App.User);
             }
 
-            App.NeedToRefreshTours = true;
+            IsBusy = false;
         }
         [RelayCommand]
         private async void EditTour(Tour tour)
@@ -76,7 +77,10 @@ namespace TravelAgencyApp.ViewModels
         [RelayCommand]
         private async void AddTour()
         {
-            
+            await Shell.Current.GoToAsync(nameof(SettingTourView), true, new Dictionary<string, object>
+            {
+                { "Tour", null }
+            });
         }
     }
 }

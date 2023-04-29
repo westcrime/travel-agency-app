@@ -2,22 +2,137 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TravelAgencyApp.Views.SettingTourView">
+             xmlns:viewmodels="clr-namespace:TravelAgencyApp.ViewModels"
+             x:DataType="viewmodels:SettingTourViewModel"
+             x:Class="TravelAgencyApp.Views.SettingTourView"
+             Title="Entering fields of tour">
+
     <ContentPage.Content>
-        <VerticalStackLayout Spacing="20">
-            <Label Text="Enter data for tour" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
-            <HorizontalStackLayout Spacing="20">
-                <Label Text="Enter the name of tour"></Label>
-                <Entry PlaceholderColor="{StaticResource Primary}" BackgroundColor="{StaticResource Secondary}" MaxLength="20" BindingContext="{}"></Entry>
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Spacing="20">
-                <Label Text="Enter the description of tour"></Label>
-                <Entry PlaceholderColor="{StaticResource Primary}" BackgroundColor="{StaticResource Secondary}" MaxLength="150" BindingContext="{}"></Entry>
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Spacing="20">
-                <Label Text="Enter the price of tour"></Label>
-                <Entry PlaceholderColor="{StaticResource Primary}" BackgroundColor="{StaticResource Secondary}" MaxLength="5" BindingContext="{}"></Entry>
-            </HorizontalStackLayout>
-        </VerticalStackLayout>
+        <Grid 
+            BackgroundColor="{StaticResource Secondary}"
+            RowDefinitions="Auto,Auto,Auto,Auto,*"
+            ColumnDefinitions="150,*"
+            Padding="20"
+            RowSpacing="40">
+            <Label
+                VerticalOptions="Center"
+                FontSize="20"
+                TextColor="Black"
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="Enter the name of tour"/>
+            <Border
+                Grid.Row="0"
+                Grid.Column="1"
+                Padding="10"
+                StrokeThickness="2"
+                BackgroundColor="{StaticResource Secondary}">
+                <Border.StrokeShape>
+                    <RoundRectangle
+                        CornerRadius="20"></RoundRectangle>
+                </Border.StrokeShape>
+                <Entry 
+                    VerticalOptions="Center"
+                    Placeholder="Name"
+                    TextColor="Black"
+                    PlaceholderColor="Gray" 
+                    BackgroundColor="{StaticResource Secondary}"
+                    MaxLength="20"
+                    Text="{Binding Name}"/>
+            </Border>
+
+            <Label
+                VerticalOptions="Center"
+                FontSize="20"
+                TextColor="Black"
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="Enter the description of tour"/>
+            <Border
+                Grid.Row="1"
+                Grid.Column="1"
+                Padding="10"
+                StrokeThickness="2"
+                BackgroundColor="{StaticResource Secondary}">
+                <Border.StrokeShape>
+                    <RoundRectangle
+                        CornerRadius="20"></RoundRectangle>
+                </Border.StrokeShape>
+                <Entry 
+                    VerticalOptions="Center"
+                    Placeholder="Description"
+                    TextColor="Black"
+                    PlaceholderColor="Gray" 
+                    BackgroundColor="{StaticResource Secondary}"
+                    MaxLength="200"
+                    Text="{Binding Description}"/>
+            </Border>
+
+            <Label
+                VerticalOptions="Center"
+                FontSize="20"
+                TextColor="Black"
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="Enter the price of tour"/>
+            <Border
+                Grid.Row="2"
+                Grid.Column="1"
+                Padding="10"
+                StrokeThickness="2"
+                BackgroundColor="{StaticResource Secondary}">
+                <Border.StrokeShape>
+                    <RoundRectangle
+                        CornerRadius="20"></RoundRectangle>
+                </Border.StrokeShape>
+                <Entry 
+                    VerticalOptions="Center"
+                    Placeholder="Price"
+                    TextColor="Black"
+                    PlaceholderColor="Gray" 
+                    BackgroundColor="{StaticResource Secondary}"
+                    MaxLength="20"
+                    Text="{Binding Price}"/>
+            </Border>
+
+            <Label
+                VerticalOptions="Center"
+                FontSize="20"
+                TextColor="Black"
+                Grid.Row="3"
+                Grid.Column="0"
+                Text="Enter the url of picture of tour"/>
+            <Border
+                Grid.Row="3"
+                Grid.Column="1"
+                Padding="10"
+                StrokeThickness="2"
+                BackgroundColor="{StaticResource Secondary}">
+                <Border.StrokeShape>
+                    <RoundRectangle
+                        CornerRadius="20"></RoundRectangle>
+                </Border.StrokeShape>
+                <Entry 
+                    VerticalOptions="Center"
+                    Placeholder="Picture"
+                    TextColor="Black"
+                    PlaceholderColor="Gray" 
+                    BackgroundColor="{StaticResource Secondary}"
+                    MaxLength="20"
+                    Text="{Binding Picture}"/>
+            </Border>
+
+            <Button
+                Text="Confirm"
+                Grid.Row="4"
+                Grid.ColumnSpan="2"
+                VerticalOptions="End"
+                IsEnabled="{Binding IsNotBusy}"
+                BackgroundColor="{StaticResource Primary}"
+                TextColor="White"
+                CornerRadius="20"
+                HeightRequest="50"
+                Command="{Binding ConfirmCommand}"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
