@@ -931,11 +931,20 @@
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\england.scale-100.jpg">
+      <PackagePath>england.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\englandd.scale-100.jpg">
+      <PackagePath>englandd.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\forflyout.scale-100.jpg">
       <PackagePath>forflyout.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\forflyout.scale-100.png">
       <PackagePath>forflyout.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\france.scale-100.jpg">
+      <PackagePath>france.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\italy.scale-100.jpg">
       <PackagePath>italy.scale-100.jpg</PackagePath>
@@ -954,6 +963,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\signout.scale-100.png">
       <PackagePath>signout.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\usa.scale-100.jpg">
+      <PackagePath>usa.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user.scale-100.png">
       <PackagePath>user.scale-100.png</PackagePath>

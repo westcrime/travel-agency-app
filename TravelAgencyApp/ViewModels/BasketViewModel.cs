@@ -71,9 +71,14 @@ namespace TravelAgencyApp.ViewModels
         [RelayCommand]
         private async void DeleteTour(Tour obj)
         {
+            IsBusy = true;
             Tours.Remove(obj);
             App.User.ReservationBook.Remove(obj.Id);
+            string cost = Cost.Remove(Cost.Length - 1);
+            double newCost = Convert.ToDouble(cost) - Convert.ToDouble(obj.Price.Remove(obj.Price.Length - 1));
+            Cost = newCost.ToString() + '$';
             await databaseService.AddUserAsync(App.User);
+            IsBusy = false;
         }
     }
 }

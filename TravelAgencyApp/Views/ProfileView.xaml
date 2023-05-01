@@ -104,6 +104,7 @@
         </Button>
         
         <Button
+            Margin="0,50,0,0"
             Grid.Row="6"
             Grid.Column="1"
             Text="Log out from profile"

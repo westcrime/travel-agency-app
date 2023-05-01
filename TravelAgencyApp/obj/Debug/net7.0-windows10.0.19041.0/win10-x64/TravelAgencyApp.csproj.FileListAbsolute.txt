@@ -349,3 +349,7 @@ C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-w
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\england.scale-100.jpg
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\englandd.scale-100.jpg
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\france.scale-100.jpg
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\usa.scale-100.jpg

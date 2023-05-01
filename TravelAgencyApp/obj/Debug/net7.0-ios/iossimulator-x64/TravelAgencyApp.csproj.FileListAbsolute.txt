@@ -294,3 +294,7 @@ C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-i
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-ios\iossimulator-x64\TravelAgencyApp.pdb
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-ios\iossimulator-x64\TravelAgencyApp.genruntimeconfig.cache
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-ios\iossimulator-x64\ref\TravelAgencyApp.dll
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\england.jpg
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\englandd.jpg
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\france.jpg
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\usa.jpg

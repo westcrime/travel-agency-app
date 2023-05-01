@@ -1016,3 +1016,7 @@ C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-a
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-android\resizetizer\r\drawable\england.jpg
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-android\resizetizer\r\drawable\englandd.jpg
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-android\resizetizer\r\drawable\france.jpg
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-android\resizetizer\r\drawable\usa.jpg
