@@ -1,4 +1,5 @@
 ﻿using Acr.UserDialogs;
+using CommunityToolkit.Maui;
 using Microsoft.Extensions.DependencyInjection;
 using TravelAgencyApp.Services;
 using TravelAgencyApp.ViewModels;
@@ -13,6 +14,7 @@ public static class MauiProgram
         var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
+			.UseMauiCommunityToolkit()
             .ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -20,7 +22,7 @@ public static class MauiProgram
 			});
 
         builder.Services.AddTransient<MenuShell>();
-        builder.Services.AddTransient<AuthenticationView>();
+        builder.Services.AddTransient<LoginView>();
         builder.Services.AddTransient<RegisterPageView>();
         builder.Services.AddTransient<ProfileView>();
         builder.Services.AddTransient<BasketView>();

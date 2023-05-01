@@ -3,9 +3,9 @@ using TravelAgencyApp.ViewModels;
 
 namespace TravelAgencyApp.Views;
 
-public partial class AuthenticationView : ContentPage
+public partial class LoginView : ContentPage
 {
-    public AuthenticationView(LoginViewModel loginViewModel)
+    public LoginView(LoginViewModel loginViewModel)
     {
         InitializeComponent();
         BindingContext = loginViewModel;

@@ -23,7 +23,7 @@ namespace TravelAgencyApp.ViewModels
                 var auth = await App.authProvider.SignInWithEmailAndPasswordAsync(UserEmail, UserPassword);
                 App.Token = auth.FirebaseToken;
                 App.User = await this.databaseService.GetUserAsync(auth.User.LocalId);
-                await Shell.Current.GoToAsync($"//{nameof(ProfileView)}", true);
+                await Shell.Current.GoToAsync($"//{nameof(MainMenu)}", true);
             }
             catch (Exception ex)
             {

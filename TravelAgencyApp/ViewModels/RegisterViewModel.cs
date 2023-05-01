@@ -27,7 +27,7 @@ namespace TravelAgencyApp.ViewModels
         {
             try
             {
-                await Shell.Current.GoToAsync($"//{nameof(AuthenticationView)}");
+                await Shell.Current.GoToAsync($"//{nameof(LoginView)}");
             }
             catch (Exception ex)
             {

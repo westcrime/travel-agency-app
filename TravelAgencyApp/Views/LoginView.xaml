@@ -1,5 +1,5 @@
 <ContentPage
-    x:Class="TravelAgencyApp.Views.AuthenticationView"
+    x:Class="TravelAgencyApp.Views.LoginView"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:viewmodel="clr-namespace:TravelAgencyApp.ViewModels"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -32,34 +32,40 @@
                     x:Name="Border"
                     StrokeThickness="0"
                     Grid.Row="0"
-                    Margin="25,250,25,150"
+                    Margin="25,200,25,150"
                     BackgroundColor="{StaticResource Secondary}">
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="25" />
                     </Border.StrokeShape>
-                    <VerticalStackLayout
-                            Spacing="20"
-                            Padding="20,20,20,20"
-                            HorizontalOptions="FillAndExpand"
-                            VerticalOptions="FillAndExpand">
+                    <Grid
+                        RowSpacing="20"
+                        Padding="20,20,20,20"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto">
                         <Label
+                            Grid.Row="0"
                             FontAttributes="Bold"
                             FontSize="24"
                             HorizontalOptions="CenterAndExpand"
                             Text="Welcome to travel app!"
                             TextColor="Black" />
                         <Label
+                            Grid.Row="1"
                             HorizontalOptions="CenterAndExpand"
                             Text="Login in to account"
                             TextColor="Black" />
 
-                        <Border Padding="8"
-                                BackgroundColor="{StaticResource Secondary}">
+                        <Border
+                            Grid.Row="2"
+                            Padding="8"
+                            BackgroundColor="{StaticResource Secondary}">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="25" />
                             </Border.StrokeShape>
 
                             <Entry
+                                BackgroundColor="{StaticResource Secondary}"
                                 HeightRequest="40"
                                 IsTextPredictionEnabled = "False"
                                 IsSpellCheckEnabled="false"
@@ -71,15 +77,18 @@
                                 Text="{Binding UserEmail}"
                                 VerticalOptions="FillAndExpand" />
 
-                                </Border>
+                        </Border>
 
-                        <Border Padding="8"
-                                BackgroundColor="{StaticResource Secondary}">
+                        <Border 
+                            Grid.Row="3"
+                            Padding="8"
+                            BackgroundColor="{StaticResource Secondary}">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="25" />
                             </Border.StrokeShape>
 
                             <Entry
+                                BackgroundColor="{StaticResource Secondary}"
                                 HeightRequest="40"
                                 IsTextPredictionEnabled = "False"
                                 IsSpellCheckEnabled="false"
@@ -94,6 +103,7 @@
 
                         </Border>
                         <Button
+                            Grid.Row="4"
                             x:Name="LoginBtn"
                             IsEnabled="{Binding IsNotBusy}"
                             BackgroundColor="{StaticResource Primary}"
@@ -102,11 +112,13 @@
                             CornerRadius="20"
                             Text="Login" />
                         <Label
+                            Grid.Row="5"
                             HorizontalOptions="Center"
                             TextColor="Black"
                             FontSize="14"
                             Text="Don't have an account?"/>
                         <Button
+                            Grid.Row="6"
                             IsEnabled="{Binding IsNotBusy}"
                             x:Name="RegisterBtn"
                             BackgroundColor="{StaticResource Primary}"
@@ -114,7 +126,19 @@
                             Command="{Binding RegisterCommand}"
                             CornerRadius="20"
                             Text="Register" />
-                    </VerticalStackLayout>
+
+                        <ActivityIndicator
+                            x:Name="ActivityIndicator"
+                            IsVisible="{Binding IsBusy}"
+                            IsRunning="{Binding IsBusy}"
+                            Grid.Row="0"
+                            HeightRequest="400"
+                            Grid.RowSpan="7"
+                            BackgroundColor="{StaticResource Secondary}"
+                            Color="{StaticResource PrimaryDark}"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"/>
+                    </Grid>
                 </Border>
             </Grid>
         </Grid>

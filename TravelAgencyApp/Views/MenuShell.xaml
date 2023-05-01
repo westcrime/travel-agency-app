@@ -15,10 +15,10 @@
     </Shell.FlyoutHeader>
 
     <ShellContent
-        ContentTemplate="{DataTemplate local:AuthenticationView}"
+        ContentTemplate="{DataTemplate local:LoginView}"
         FlyoutItemIsVisible="False"
         Shell.FlyoutBehavior="Disabled"
-        Route="AuthenticationView"/>
+        Route="LoginView"/>
 
     <ShellContent
         ContentTemplate="{DataTemplate local:RegisterPageView}"

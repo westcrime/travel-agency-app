@@ -91,6 +91,30 @@
         <member name="P:TravelAgencyApp.ViewModels.ProfileViewModel.UserEmail">
             <inheritdoc cref="F:TravelAgencyApp.ViewModels.ProfileViewModel.userEmail"/>
         </member>
+        <member name="P:TravelAgencyApp.ViewModels.ProfileViewModel.UserPassword">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.ProfileViewModel.userPassword"/>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.ProfileViewModel.Balance">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.ProfileViewModel.balance"/>
+        </member>
+        <member name="F:TravelAgencyApp.ViewModels.ProfileViewModel.putMoneyOnBalanceCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.ProfileViewModel.PutMoneyOnBalanceCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.ProfileViewModel.PutMoneyOnBalanceCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.ProfileViewModel.PutMoneyOnBalance"/>.</summary>
+        </member>
+        <member name="F:TravelAgencyApp.ViewModels.ProfileViewModel.changePasswordCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.ProfileViewModel.ChangePasswordCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.ProfileViewModel.ChangePasswordCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.ProfileViewModel.ChangePassword"/>.</summary>
+        </member>
+        <member name="F:TravelAgencyApp.ViewModels.ProfileViewModel.logOutCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.ProfileViewModel.LogOutCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.ProfileViewModel.LogOutCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.ProfileViewModel.LogOut"/>.</summary>
+        </member>
         <member name="F:TravelAgencyApp.ViewModels.ProfileViewModel.changeEmailCommand">
             <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.ProfileViewModel.ChangeEmailCommand"/>.</summary>
         </member>

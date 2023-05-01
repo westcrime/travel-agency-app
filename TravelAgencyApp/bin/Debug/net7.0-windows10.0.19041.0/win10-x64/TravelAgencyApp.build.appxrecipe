@@ -607,6 +607,12 @@
     <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\acr.userdialogs\8.0.1\lib\net6.0\Acr.UserDialogs.dll">
       <PackagePath>Acr.UserDialogs.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\communitytoolkit.maui\5.1.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.dll">
+      <PackagePath>CommunityToolkit.Maui.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\communitytoolkit.maui.core\5.1.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
+      <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\westcrime\.nuget\packages\communitytoolkit.mvvm\8.1.0\lib\net6.0\CommunityToolkit.Mvvm.dll">
       <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>
     </AppxPackagedFile>

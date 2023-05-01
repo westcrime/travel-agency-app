@@ -5,11 +5,12 @@
              x:Class="TravelAgencyApp.Views.ProfileView"
              x:DataType="viewmodel:ProfileViewModel"
              Title="Profile"
-             BackgroundColor="White">
+             BackgroundColor="{StaticResource Secondary}"
+             NavigatedTo="ProfileView_OnNavigatedTo">
 
     <Grid 
         BackgroundColor="{StaticResource Secondary}"
-        RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+        RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto"
         ColumnDefinitions="150,*"
         Padding="20"
         RowSpacing="40">
@@ -72,7 +73,8 @@
             Text="Change Password"
             IsEnabled="{Binding IsNotBusy}"
             BackgroundColor="{StaticResource Primary}"
-            TextColor="White">
+            TextColor="White"
+            Command="{Binding ChangePasswordCommand}">
         </Button>   
 
         <Label
@@ -83,19 +85,38 @@
             Grid.Column="0"
             Text="Balance"/>
 
-        <Button
+        <Label
+            VerticalOptions="Center"
+            FontSize="20"
+            TextColor="Black"
             Grid.Row="4"
+            Grid.Column="1"
+            Text="{Binding Balance}"/>
+        
+        <Button
+            Grid.Row="5"
             Grid.Column="1"
             Text="Put money on balance"
             IsEnabled="{Binding IsNotBusy}"
             BackgroundColor="{StaticResource Primary}"
+            Command="{Binding PutMoneyOnBalanceCommand}"
+            TextColor="White">
+        </Button>
+        
+        <Button
+            Grid.Row="6"
+            Grid.Column="1"
+            Text="Log out from profile"
+            IsEnabled="{Binding IsNotBusy}"
+            BackgroundColor="{StaticResource Primary}"
+            Command="{Binding LogOutCommand}"
             TextColor="White">
         </Button>
 
         <ActivityIndicator
             IsVisible="{Binding IsBusy}"
             IsRunning="{Binding IsBusy}"
-            Grid.RowSpan="5"
+            Grid.RowSpan="7"
             Grid.ColumnSpan="2"
             BackgroundColor="Transparent"
             Color="{StaticResource PrimaryDark}"

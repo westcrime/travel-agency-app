@@ -1,4 +1,3 @@
-using Javax.Security.Auth;
 using TravelAgencyApp.ViewModels;
 
 namespace TravelAgencyApp.Views;
@@ -13,4 +12,9 @@ public partial class ProfileView : ContentPage
         BindingContext = profileViewModel;
 
     }
+
+	private void ProfileView_OnNavigatedTo(object sender, NavigatedToEventArgs e)	
+	{
+		this.profileViewModel.Update();
+	}
 }

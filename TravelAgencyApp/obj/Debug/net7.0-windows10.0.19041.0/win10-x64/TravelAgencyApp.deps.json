@@ -10,6 +10,7 @@
       "TravelAgencyApp/1.0": {
         "dependencies": {
           "Acr.UserDialogs": "8.0.1",
+          "CommunityToolkit.Maui": "5.1.0",
           "CommunityToolkit.Mvvm": "8.1.0",
           "FireSharp": "2.0.4",
           "FirebaseAuthentication.net": "3.7.2",
@@ -802,6 +803,25 @@
           "lib/net6.0/Acr.UserDialogs.dll": {
             "assemblyVersion": "8.0.1.2",
             "fileVersion": "8.0.1.2"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -2034,6 +2054,20 @@
       "sha512": "sha512-17RkOZQf/j+osXl7UURPbDpHNL0wGRYYpi+P5Sl3FJOIwT9c0jPLgSPn48NFVdmDjKIckTXiFgc+u0LNNhhLjw==",
       "path": "acr.userdialogs/8.0.1",
       "hashPath": "acr.userdialogs.8.0.1.nupkg.sha512"
+    },
+    "CommunityToolkit.Maui/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+1WDMZzM8Skc5+qmc3HJZ25qIrWKYotnZRHxO1PTmWWTKPXVmJa7PTo4gmzX+ga4gdIa6jvsvO255cVKWb0i8Q==",
+      "path": "communitytoolkit.maui/5.1.0",
+      "hashPath": "communitytoolkit.maui.5.1.0.nupkg.sha512"
+    },
+    "CommunityToolkit.Maui.Core/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZIZ7Ls+30EUoF7tgvaM/Y5MHfkdW5L7zsnFAF7aYRT1830HZqWnnyElXTC0GGjnunjvDl/cvthK1+ZfkuHCjrA==",
+      "path": "communitytoolkit.maui.core/5.1.0",
+      "hashPath": "communitytoolkit.maui.core.5.1.0.nupkg.sha512"
     },
     "CommunityToolkit.Mvvm/8.1.0": {
       "type": "package",
