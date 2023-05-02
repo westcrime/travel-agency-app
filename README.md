@@ -1,6 +1,6 @@
 # Туристическая компания
 <img
-  src="Screenshots/Screens.png"
+  src="Screenshots/screens.png"
   alt="Alt text"
   title="Screens"
   style="display: inline-block/>
