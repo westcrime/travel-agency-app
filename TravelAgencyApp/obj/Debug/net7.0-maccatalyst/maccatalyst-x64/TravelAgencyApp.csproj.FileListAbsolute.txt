@@ -287,3 +287,4 @@ C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-m
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\englandd.jpg
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\france.jpg
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\usa.jpg
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\edit.png

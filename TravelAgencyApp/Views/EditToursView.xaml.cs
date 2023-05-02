@@ -12,9 +12,11 @@ public partial class EditToursView : ContentPage
         this.viewModel = editToursViewModel;
         BindingContext = viewModel;
     }
-    private async void EditToursView_NavigatedTo(object sender, EventArgs e)
-    {
-        await viewModel.GetToursAsync();
-    }
 
+    protected override async void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        base.OnNavigatedTo(args);
+        await viewModel.GetToursAsync();
+
+    }
 }

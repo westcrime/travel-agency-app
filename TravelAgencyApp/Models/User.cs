@@ -13,18 +13,15 @@ namespace TravelAgencyApp.Models
         public string Email;
         [JsonProperty(PropertyName = "Balance")]
         public double Balance;
-        [JsonProperty(PropertyName = "Password")]
-        public string Password;
         [JsonProperty(PropertyName = "Id")]
         public string Id;
         [JsonProperty(PropertyName = "ReservationBook")]
         public List<string> ReservationBook;
 
-        public User(string email,string password, string id)
+        public User(string email, string id)
         {
             Id = id;
             Email = email;
-            Password = password;
             ReservationBook = new List<string>();
             Balance = 0.0;
         }

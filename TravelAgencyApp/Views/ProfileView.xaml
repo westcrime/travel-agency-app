@@ -4,19 +4,18 @@
              xmlns:viewmodel="clr-namespace:TravelAgencyApp.ViewModels"
              x:Class="TravelAgencyApp.Views.ProfileView"
              x:DataType="viewmodel:ProfileViewModel"
+             Shell.NavBarIsVisible="False"
              Title="Profile"
-             BackgroundColor="{StaticResource Secondary}"
-             NavigatedTo="ProfileView_OnNavigatedTo">
+             BackgroundColor="{StaticResource Secondary}">
 
     <Grid 
         BackgroundColor="{StaticResource Secondary}"
         RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto"
-        ColumnDefinitions="150,*"
         Padding="20"
-        RowSpacing="40">
+        RowSpacing="10">
 
         <Border 
-            Grid.ColumnSpan="2"
+            Grid.ColumnSpan="3"
             Grid.Row="0"
             HeightRequest="150"
             WidthRequest="150"
@@ -33,80 +32,111 @@
                 Aspect="AspectFill"/>
         </Border>
 
-        <Label
-            VerticalOptions="Center"
-            FontSize="20"
-            TextColor="Black"
+        <Border
             Grid.Row="1"
-            Grid.Column="0"
-            Text="Email"/>
+            HeightRequest="100"
+            Padding="10"
+            BackgroundColor="WhiteSmoke">
+            <Border.StrokeShape>
+                <RoundRectangle
+                    CornerRadius="20"></RoundRectangle>
+            </Border.StrokeShape>
+            <Grid
+                ColumnDefinitions="275,*">
+                <Label
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    TextColor="Black"
+                    Grid.Column="0"
+                    Text="{Binding UserEmail,
+             StringFormat='Email:   {0}'}"/>
 
-        <Label
-            VerticalOptions="Center"
-            FontSize="20"
-            TextColor="Black"
-            Grid.Row="1"
-            Grid.Column="1"
-            Text="{Binding UserEmail}"/>
+                <ImageButton
+                    Grid.Column="1"
+                    IsEnabled="{Binding IsNotBusy}"
+                    HeightRequest="55"
+                    WidthRequest="55"
+                    Padding="7"
+                    CornerRadius="7"
+                    Source="Edit.png"
+                    BackgroundColor="{StaticResource Primary}"
+                    Command="{Binding ChangeEmailCommand}">
+                </ImageButton>
+            </Grid>
+        </Border>
 
-        <Button
+
+
+        <Border
             Grid.Row="2"
-            Grid.Column="1"
-            Text="Change Email"
-            IsEnabled="{Binding IsNotBusy}"
-            BackgroundColor="{StaticResource Primary}"
-            Command="{Binding ChangeEmailCommand}"
-            TextColor="White">
-        </Button>
+            HeightRequest="100"
+            Padding="10"
+            BackgroundColor="WhiteSmoke">
+            <Border.StrokeShape>
+                <RoundRectangle
+                    CornerRadius="20"></RoundRectangle>
+            </Border.StrokeShape>
+            <Grid
+                ColumnDefinitions="275,*">
+                <Label
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    TextColor="Black"
+                    Grid.Column="0"
+                    Text="{Binding UserPassword,
+             StringFormat='Password:   {0}'}"/>
 
-        <Label
-            VerticalOptions="Center"
-            FontSize="20"
-            TextColor="Black"
+                <ImageButton
+                    Grid.Column="1"
+                    IsEnabled="{Binding IsNotBusy}"
+                    HeightRequest="55"
+                    WidthRequest="55"
+                    Padding="7"
+                    CornerRadius="7"
+                    Source="Edit.png"
+                    BackgroundColor="{StaticResource Primary}"
+                    Command="{Binding ChangePasswordCommand}">
+                </ImageButton>
+            </Grid>
+        </Border>
+
+        <Border
             Grid.Row="3"
-            Grid.Column="0"
-            Text="Password"/>
-        
-        <Button
-            Grid.Row="3"
-            Grid.Column="1"
-            Text="Change Password"
-            IsEnabled="{Binding IsNotBusy}"
-            BackgroundColor="{StaticResource Primary}"
-            TextColor="White"
-            Command="{Binding ChangePasswordCommand}">
-        </Button>   
+            HeightRequest="100"
+            Padding="10"
+            BackgroundColor="WhiteSmoke">
+            <Border.StrokeShape>
+                <RoundRectangle
+                    CornerRadius="20"></RoundRectangle>
+            </Border.StrokeShape>
+            <Grid
+                ColumnDefinitions="275,*">
+                <Label
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    TextColor="Black"
+                    Grid.Column="0"
+                    Text="{Binding Balance,
+             StringFormat='Balance:   {0}'}"/>
 
-        <Label
-            VerticalOptions="Center"
-            FontSize="20"
-            TextColor="Black"
-            Grid.Row="4"
-            Grid.Column="0"
-            Text="Balance"/>
+                <ImageButton
+                    Grid.Column="1"
+                    IsEnabled="{Binding IsNotBusy}"
+                    HeightRequest="55"
+                    WidthRequest="55"
+                    Padding="7"
+                    CornerRadius="7"
+                    Source="wallet.png"
+                    BackgroundColor="{StaticResource Primary}"
+                    Command="{Binding PutMoneyOnBalanceCommand}">
+                </ImageButton>
+            </Grid>
+        </Border>
 
-        <Label
-            VerticalOptions="Center"
-            FontSize="20"
-            TextColor="Black"
-            Grid.Row="4"
-            Grid.Column="1"
-            Text="{Binding Balance}"/>
-        
         <Button
-            Grid.Row="5"
-            Grid.Column="1"
-            Text="Put money on balance"
-            IsEnabled="{Binding IsNotBusy}"
-            BackgroundColor="{StaticResource Primary}"
-            Command="{Binding PutMoneyOnBalanceCommand}"
-            TextColor="White">
-        </Button>
-        
-        <Button
-            Margin="0,50,0,0"
             Grid.Row="6"
-            Grid.Column="1"
+            WidthRequest="200"
+            Grid.ColumnSpan="2"
             Text="Log out from profile"
             IsEnabled="{Binding IsNotBusy}"
             BackgroundColor="{StaticResource Primary}"

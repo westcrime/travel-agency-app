@@ -13,8 +13,11 @@ public partial class ProfileView : ContentPage
 
     }
 
-	private void ProfileView_OnNavigatedTo(object sender, NavigatedToEventArgs e)	
-	{
-		this.profileViewModel.Update();
-	}
+    protected override async void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        base.OnNavigatedTo(args);
+        await Task.Delay(250);
+        await this.profileViewModel.Update();
+    }
+
 }

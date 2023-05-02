@@ -24,17 +24,20 @@ namespace TravelAgencyApp.ViewModels
             try
             {
                 string result = await App.Current.MainPage.DisplayPromptAsync("Putting money on balance", "Enter the value of operation");
-                IsBusy = true;
-                double value = Convert.ToDouble(result);
-                if (value <= 0)
+                if (!string.IsNullOrEmpty(result))
                 {
-                    await App.Current.MainPage.DisplayAlert("Alert", "Incorrect value!", "OK");
-                }
-                else
-                {
-                    App.User.Balance += value;
-                    await this.databaseService.AddUserAsync(App.User);
-                    this.Balance = App.User.Balance.ToString() + '$';
+                    IsBusy = true;
+                    double value = Convert.ToDouble(result);
+                    if (value <= 0)
+                    {
+                        await App.Current.MainPage.DisplayAlert("Alert", "Incorrect value!", "OK");
+                    }
+                    else
+                    {
+                        App.User.Balance += value;
+                        await this.databaseService.AddUserAsync(App.User);
+                        this.Balance = App.User.Balance.ToString() + '$';
+                    }
                 }
             }
             catch (Exception e)
@@ -52,14 +55,12 @@ namespace TravelAgencyApp.ViewModels
         {
             try
             {
-                string result = await App.Current.MainPage.DisplayPromptAsync("Changing Password", "Enter new Password");
+                bool answer = await App.Current.MainPage.DisplayAlert("Alert", "Do you really want to change password?", "Yes", "No");
                 IsBusy = true;
-                if (!string.IsNullOrEmpty(result))
+                if (answer)
                 {
-                    await App.authProvider.ChangeUserPassword(App.Token, result);
-                    App.User.Password = result;
-                    await databaseService.AddUserAsync(App.User);
-                    UserPassword = App.User.Password;
+                    await App.authProvider.SendPasswordResetEmailAsync(App.User.Email);
+                    await App.Current.MainPage.DisplayAlert("Warning", "We have sent reset email message with password changing. Check it", "OK");
                 }
             }
             catch (Exception e)
@@ -120,12 +121,15 @@ namespace TravelAgencyApp.ViewModels
             }
         }
 
-        public void Update()
+        public async Task Update()
         {
-            IsBusy = true;
-            this.Balance = App.User.Balance.ToString() + '$';
-            UserEmail = App.User.Email;
-            IsBusy = false;
+            await Task.Run(() =>
+            {
+                IsBusy = true;
+                this.Balance = App.User.Balance.ToString() + '$';
+                UserEmail = App.User.Email;
+                IsBusy = false;
+            });
         }
         
         public ProfileViewModel(DatabaseService databaseService)
@@ -133,6 +137,7 @@ namespace TravelAgencyApp.ViewModels
             this.Balance = App.User.Balance.ToString() + '$';
             UserEmail = App.User.Email;
             this.databaseService = databaseService;
+            UserPassword = "********";
         }
     }
 }

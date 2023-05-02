@@ -4,8 +4,7 @@
              xmlns:viewmodel="clr-namespace:TravelAgencyApp.ViewModels"
              xmlns:models="clr-namespace:TravelAgencyApp.Models"
              x:Class="TravelAgencyApp.Views.BasketView"
-             x:DataType="viewmodel:BasketViewModel"
-             NavigatedTo="BasketView_NavigatedTo">
+             x:DataType="viewmodel:BasketViewModel">
     <ContentPage.Content>
 
         <Grid
@@ -18,7 +17,7 @@
             <Label 
                 Grid.ColumnSpan="2"
                    Grid.Row="0"
-                   Text="Editing of tours"
+                   Text="Basket of tours"
                    TextColor="Black"
                    Margin="20,20,20,0"
                    FontSize="25"
@@ -162,13 +161,15 @@
                     WidthRequest="180"
                     FontSize="17" 
                     FontAttributes="Bold" 
-                    HeightRequest="55"/>
+                    HeightRequest="55"
+                    Command="{Binding BuyCommand}"/>
             </Grid>
 
             <ActivityIndicator
+                Margin="0,0,0,0"
                 IsVisible="{Binding IsBusy}"
                 IsRunning="{Binding IsBusy}"
-                Grid.RowSpan="3"
+                Grid.RowSpan="5"
                 Grid.ColumnSpan="2"
                 BackgroundColor="Transparent"
                 Color="{StaticResource Primary}"

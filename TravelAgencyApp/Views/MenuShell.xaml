@@ -5,38 +5,67 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:TravelAgencyApp.Views"
     xmlns:model="clr-namespace:TravelAgencyApp.Models"
-    Shell.TabBarIsVisible="False"
-    Shell.ForegroundColor="Black"
-    Shell.BackgroundColor="#14abb2"
-    FlyoutBackgroundColor="#14abb2">
+    TabBarIsVisible="True">
 
-    <Shell.FlyoutHeader>
+    <!--<Shell.FlyoutHeader>
         <Image Source="forflyout.png" Aspect="AspectFill"></Image>
-    </Shell.FlyoutHeader>
+    </Shell.FlyoutHeader>-->
 
     <ShellContent
         ContentTemplate="{DataTemplate local:LoginView}"
-        FlyoutItemIsVisible="False"
         Shell.FlyoutBehavior="Disabled"
+        Shell.TabBarIsVisible="False"
         Route="LoginView"/>
 
     <ShellContent
         ContentTemplate="{DataTemplate local:RegisterPageView}"
         FlyoutItemIsVisible="False"
+        Shell.TabBarIsVisible="False"
         Shell.FlyoutBehavior="Disabled"
         Route="RegisterPageView"/>
 
 
-
+    <TabBar>
+        <Tab
+            Title="My profile"
+            Icon="{x:Static model:Icons.Profile}">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:ProfileView}"
+                Route="ProfileView"/>
+        </Tab>
+        <Tab
+            Title="My Basket"
+            Icon="{x:Static model:Icons.Basket}">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:BasketView}"
+                Route="BasketView"/>
+        </Tab>
+        <Tab
+            Title="Tour overview" 
+            Icon="{x:Static model:Icons.Overview}">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:MainMenu}" 
+                Route="MainMenu"/>
+        </Tab>
+    </TabBar>
     
-    <FlyoutItem Title="Profile" FlyoutDisplayOptions="AsMultipleItems">
+    <!--<FlyoutItem Title="Profile" FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent
-                Title="My profile" Icon="{x:Static model:Icons.Profile}" ContentTemplate="{DataTemplate local:ProfileView}" Route="ProfileView"/>
+                Title="My profile"
+                Icon="{x:Static model:Icons.Profile}"
+                ContentTemplate="{DataTemplate local:ProfileView}"
+                Route="ProfileView"/>
         <ShellContent
-                Title="My Basket" Icon="{x:Static model:Icons.Basket}" ContentTemplate="{DataTemplate local:BasketView}" Route="BasketView"/>
+                Title="My Basket"
+                Icon="{x:Static model:Icons.Basket}"
+                ContentTemplate="{DataTemplate local:BasketView}"
+                Route="BasketView"/>
         <ShellContent
-                Title="Tour overview" Icon="{x:Static model:Icons.Overview}" ContentTemplate="{DataTemplate local:MainMenu}" Route="MainMenu"/>
+                Title="Tour overview" 
+                Icon="{x:Static model:Icons.Overview}"
+                ContentTemplate="{DataTemplate local:MainMenu}" 
+                Route="MainMenu"/>
 
-    </FlyoutItem>
+    </FlyoutItem>-->
 
 </Shell>

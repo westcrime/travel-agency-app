@@ -22,6 +22,12 @@
         <member name="P:TravelAgencyApp.ViewModels.BasketViewModel.DeleteTourCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.BasketViewModel.DeleteTour(TravelAgencyApp.Models.Tour)"/>.</summary>
         </member>
+        <member name="F:TravelAgencyApp.ViewModels.BasketViewModel.buyCommand">
+            <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.BasketViewModel.BuyCommand"/>.</summary>
+        </member>
+        <member name="P:TravelAgencyApp.ViewModels.BasketViewModel.BuyCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.BasketViewModel.Buy"/>.</summary>
+        </member>
         <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.Tour">
             <inheritdoc cref="F:TravelAgencyApp.ViewModels.DetailTourViewModel.tour"/>
         </member>

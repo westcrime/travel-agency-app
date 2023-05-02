@@ -1,8 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Microsoft.Maui.Storage;
-using Firebase.Auth;
-using TravelAgencyApp.Models;
 using TravelAgencyApp.Services;
 using TravelAgencyApp.Views;
 
@@ -49,8 +46,7 @@ namespace TravelAgencyApp.ViewModels
                 App.User = new Models.User()
                 {
                     Id = auth1.User.LocalId,
-                    Email = UserEmail,
-                    Password = UserPassword
+                    Email = UserEmail
                 };
                 await this.databaseService.AddUserAsync(App.User);
                 await Shell.Current.GoToAsync($"//{nameof(MainMenu)}", true);

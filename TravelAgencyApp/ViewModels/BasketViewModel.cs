@@ -80,5 +80,29 @@ namespace TravelAgencyApp.ViewModels
             await databaseService.AddUserAsync(App.User);
             IsBusy = false;
         }
+
+        [RelayCommand]
+        private async void Buy()
+        {
+            double cost = Convert.ToDouble(Cost.Remove(Cost.Length - 1));
+            if (Convert.ToDouble(Balance.Remove(Balance.Length - 1)) < cost)
+            {
+                await App.Current.MainPage.DisplayAlert("Alert", "You do not have enough money!", "OK");
+                return;
+            }
+            else
+            {
+                await Task.Run(() =>
+                {
+                    Tours.Clear();
+                    App.User.ReservationBook.Clear();
+                    App.User.Balance -= cost;
+                    Balance = App.User.Balance.ToString() + '$';
+                });
+                await databaseService.AddUserAsync(App.User);
+                await App.Current.MainPage.DisplayAlert("Success!", "You have bought tour(s)!", "OK");
+                Cost = "0$";
+            }
+        }
     }
 }

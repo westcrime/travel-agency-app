@@ -6,7 +6,6 @@
              xmlns:model="clr-namespace:TravelAgencyApp.Models"
              x:Class="TravelAgencyApp.Views.EditToursView"
              x:DataType="viewmodel:EditToursViewModel"
-             NavigatedTo="EditToursView_NavigatedTo"
              Title="Editing tours">
     <ContentPage.Content>
         <Grid
@@ -94,6 +93,7 @@
                                 <VerticalStackLayout 
                                     Grid.Row="0"
                                     Grid.Column="3"
+                                    Margin="0,25,0,0"
                                     Spacing="5"
                                     VerticalOptions="Start">
                                     <Button 

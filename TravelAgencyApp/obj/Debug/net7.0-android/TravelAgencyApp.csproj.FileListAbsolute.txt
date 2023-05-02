@@ -1020,3 +1020,5 @@ C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-a
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-android\resizetizer\r\drawable\englandd.jpg
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-android\resizetizer\r\drawable\france.jpg
 C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-android\resizetizer\r\drawable\usa.jpg
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-android\resizetizer\r\drawable\edit.png
+C:\Users\westcrime\course_2\travel-agency-app\TravelAgencyApp\obj\Debug\net7.0-android\resizetizer\r\drawable\wallet.png

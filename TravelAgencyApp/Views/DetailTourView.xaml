@@ -19,7 +19,7 @@
                 </Border>
             </StackLayout>
 
-            <StackLayout Grid.Row="1" HeightRequest="400">
+            <StackLayout Grid.Row="1" HeightRequest="375">
                 <Grid>
                     <Grid RowDefinitions="Auto,Auto,Auto,Auto" Padding="20,45,20,0" RowSpacing="20" >
                         <Label Grid.Row="1" Text="{Binding Tour.Name}" FontSize="30" FontAttributes="Bold" TextColor="Black"/>
@@ -29,11 +29,21 @@
                 </Grid>
             </StackLayout>
 
-            <BoxView Grid.Row="2" CornerRadius="0,0,50,50" Margin="0,-1,0,0" Color="{StaticResource Secondary}" HeightRequest="150" />
+            <BoxView 
+                Grid.Row="2" 
+                CornerRadius="0,0,50,50" 
+                Margin="0,0,0,0"
+                Color="{StaticResource Secondary}"
+                HeightRequest="150" />
 
-            <Button Text="Add to Basket" Grid.Row="2" CornerRadius="20"
+            <Button Text="Add to Basket" 
+                    Grid.Row="2" 
+                    CornerRadius="20"
                     Command="{Binding TourToBasketCommand}"
-                    BackgroundColor="LightSeaGreen" Margin="60,40,60,90" FontAttributes="Bold" HeightRequest="55"
+                    BackgroundColor="{StaticResource Primary}" 
+                    Margin="60,0,60,90" 
+                    FontAttributes="Bold" 
+                    HeightRequest="55"
                     TextColor="White" VerticalOptions="Center"/>
         </Grid>
     </ContentPage.Content>

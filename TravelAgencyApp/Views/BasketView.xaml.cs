@@ -13,8 +13,11 @@ public partial class BasketView : ContentPage
 
     }
 
-    private void BasketView_NavigatedTo(object sender, EventArgs e)
+    protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
-        _viewModel.GetToursAsync();
+        base.OnNavigatedTo(args);
+        await Task.Delay(250);
+        await _viewModel.GetToursAsync();
+
     }
 }

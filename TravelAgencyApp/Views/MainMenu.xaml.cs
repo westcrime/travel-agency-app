@@ -13,9 +13,12 @@ public partial class MainMenu : ContentPage
         BindingContext = viewModel;
     }
 
-    private async void MainMenu_OnNavigated(object sender, EventArgs e)
+    protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
+        base.OnNavigatedTo(args);
+        await Task.Delay(250);
         await viewModel.GetToursAsync();
+
     }
 
     private async void TapGestureRecognizer_OnTapped(object sender, EventArgs e)

@@ -5,8 +5,7 @@
              xmlns:model="clr-namespace:TravelAgencyApp.Models"
              x:Class="TravelAgencyApp.Views.MainMenu"
              x:DataType="viewmodel:MainMenuViewModel"
-             NavigatedTo="MainMenu_OnNavigated"
-             Shell.NavBarIsVisible="True"
+             Shell.NavBarIsVisible="False"
              Title="Tours overview">
     <ContentPage.Content>
         <Grid
