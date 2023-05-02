@@ -27,11 +27,11 @@
 
     <TabBar>
         <Tab
-            Title="My profile"
-            Icon="{x:Static model:Icons.Profile}">
+            Title="Tour overview" 
+            Icon="{x:Static model:Icons.Overview}">
             <ShellContent
-                ContentTemplate="{DataTemplate local:ProfileView}"
-                Route="ProfileView"/>
+                ContentTemplate="{DataTemplate local:MainMenu}" 
+                Route="MainMenu"/>
         </Tab>
         <Tab
             Title="My Basket"
@@ -41,11 +41,11 @@
                 Route="BasketView"/>
         </Tab>
         <Tab
-            Title="Tour overview" 
-            Icon="{x:Static model:Icons.Overview}">
+            Title="My profile"
+            Icon="{x:Static model:Icons.Profile}">
             <ShellContent
-                ContentTemplate="{DataTemplate local:MainMenu}" 
-                Route="MainMenu"/>
+                ContentTemplate="{DataTemplate local:ProfileView}"
+                Route="ProfileView"/>
         </Tab>
     </TabBar>
     
