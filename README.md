@@ -1,5 +1,6 @@
 # Туристическая компания
-![alt text](https://github.com/westcrime/travel-agency-app/blob/main/LoginPage.png?raw=true)
+![Image alt](https://github.com/westcrime/travel-agency-app/raw/main/Screenshots/LoginPage.png)
+
 # Диаграмма классов
 
 ![Image alt](https://github.com/westcrime/travel-agency-app/raw/main/diagram/diagram.png)
