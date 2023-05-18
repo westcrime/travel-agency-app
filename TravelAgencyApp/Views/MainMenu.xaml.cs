@@ -26,10 +26,12 @@ public partial class MainMenu : ContentPage
         var tour = ((VisualElement)sender).BindingContext as Tour;
         if (tour != null)
         {
+            viewModel.IsBusy = true;
             await Shell.Current.GoToAsync(nameof(DetailTourView), true, new Dictionary<string, object>
             {
                 { "Tour", tour }
             });
+            viewModel.IsBusy = false;
         }
     }
 }

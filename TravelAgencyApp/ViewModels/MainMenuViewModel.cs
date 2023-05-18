@@ -61,7 +61,9 @@ namespace TravelAgencyApp.ViewModels
         [RelayCommand]  
         private async void EditToursClicked()
         {
+            IsBusy = true;
             await Shell.Current.GoToAsync(nameof(EditToursView), true);
+            IsBusy = false;
         }
 
     }
