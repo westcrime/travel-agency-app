@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using TravelAgencyApp.Application.Abstractions;
 using TravelAgencyApp.Models;
 using TravelAgencyApp.Services;
 using TravelAgencyApp.Views;
@@ -15,11 +16,15 @@ namespace TravelAgencyApp.ViewModels
         [ObservableProperty]
         private Tour tour;
 
-        private DatabaseService databaseService;
+        private readonly IUserService _userService;
 
-        public EditToursViewModel(DatabaseService databaseService)
+        private readonly ITourService _tourService;
+
+        public EditToursViewModel(IUserService userService, ITourService tourService)
         {
-            this.databaseService = databaseService;
+            App.NeedToRefresh = true;
+            _tourService = tourService;
+            _userService = userService;
             Tours = new ObservableCollection<Tour>();
         }
         public async Task GetToursAsync()
@@ -31,7 +36,7 @@ namespace TravelAgencyApp.ViewModels
 
                 IsBusy = true;
 
-                var tours = await databaseService.GetToursAsync();
+                var tours = await _tourService.GetAllAsync();
 
                 if (Tours.Count != 0)
                     Tours.Clear();
@@ -57,11 +62,11 @@ namespace TravelAgencyApp.ViewModels
         {
             IsBusy = true;
             Tours.Remove(tour);
-            await databaseService.RemoveTourAsync(tour);
-            if (App.User.ReservationBook.Contains(tour.Id))
+            await _tourService.DeleteAsync(tour);
+            if (App.CurrentUser.ReservationBook.Contains(tour.Id))
             {
-                App.User.ReservationBook.Remove(tour.Id);
-                await databaseService.AddUserAsync(App.User);
+                App.CurrentUser.ReservationBook.Remove(tour.Id);
+                await _userService.AddAsync(App.CurrentUser);
             }
 
             IsBusy = false;

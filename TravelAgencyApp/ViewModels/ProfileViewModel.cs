@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using TravelAgencyApp.Application.Abstractions;
 using TravelAgencyApp.Services;
 using TravelAgencyApp.Views;
 
@@ -7,7 +8,18 @@ namespace TravelAgencyApp.ViewModels
 {
     public partial class ProfileViewModel : BaseViewModel
     {
-        private DatabaseService databaseService;
+        private readonly IUserService _userService;
+
+        private readonly ITourService _tourService;
+
+        public ProfileViewModel(IUserService userService, ITourService tourService)
+        {
+            _tourService = tourService;
+            _userService = userService;
+            Balance = App.CurrentUser.Balance.ToString() + '$';
+            UserEmail = App.CurrentUser.Email;
+            UserPassword = "********";
+        }
 
         [ObservableProperty]
         public string userEmail;
@@ -34,9 +46,9 @@ namespace TravelAgencyApp.ViewModels
                     }
                     else
                     {
-                        App.User.Balance += value;
-                        await this.databaseService.AddUserAsync(App.User);
-                        this.Balance = App.User.Balance.ToString() + '$';
+                        App.CurrentUser.Balance += value;
+                        await _userService.AddAsync(App.CurrentUser);
+                        Balance = App.CurrentUser.Balance.ToString() + '$';
                     }
                 }
             }
@@ -59,7 +71,7 @@ namespace TravelAgencyApp.ViewModels
                 IsBusy = true;
                 if (answer)
                 {
-                    await App.authProvider.SendPasswordResetEmailAsync(App.User.Email);
+                    await _userService.AuthProvider.SendPasswordResetEmailAsync(App.CurrentUser.Email);
                     await App.Current.MainPage.DisplayAlert("Warning", "We have sent reset email message with password changing. Check it", "OK");
                 }
             }
@@ -82,7 +94,8 @@ namespace TravelAgencyApp.ViewModels
                 IsBusy = true;
                 if (answer)
                 {
-                    App.User = null;
+                    App.CurrentUser = null;
+                    Preferences.Clear("AuthToken");
                     await Shell.Current.GoToAsync($"//{nameof(LoginView)}", true);
                 }
             }
@@ -105,10 +118,10 @@ namespace TravelAgencyApp.ViewModels
                 IsBusy = true;
                 if (!string.IsNullOrEmpty(result))
                 {
-                    await App.authProvider.ChangeUserEmail(App.Token, result);
-                    App.User.Email = result;
-                    await databaseService.AddUserAsync(App.User);
-                    UserEmail = App.User.Email;
+                    await _userService.AuthProvider.ChangeUserEmail(Preferences.Get("AuthToken", "no token"), result);
+                    App.CurrentUser.Email = result;
+                    await _userService.AddAsync(App.CurrentUser);
+                    UserEmail = App.CurrentUser.Email;
                 }
             }
             catch (Exception e)
@@ -126,19 +139,12 @@ namespace TravelAgencyApp.ViewModels
             await Task.Run(() =>
             {
                 IsBusy = true;
-                this.Balance = App.User.Balance.ToString() + '$';
-                UserEmail = App.User.Email;
+                Balance = App.CurrentUser.Balance.ToString() + '$';
+                UserEmail = App.CurrentUser.Email;
                 IsBusy = false;
             });
         }
         
-        public ProfileViewModel(DatabaseService databaseService)
-        {
-            this.Balance = App.User.Balance.ToString() + '$';
-            UserEmail = App.User.Email;
-            this.databaseService = databaseService;
-            UserPassword = "********";
-        }
     }
 }
 

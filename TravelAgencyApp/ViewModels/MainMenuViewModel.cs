@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using TravelAgencyApp.Application.Abstractions;
 using TravelAgencyApp.Models;
 using TravelAgencyApp.Services;
 using TravelAgencyApp.Views;
@@ -14,15 +15,19 @@ namespace TravelAgencyApp.ViewModels
         [ObservableProperty]
         private Tour selectedTour;
 
+        private Models.User user;
+
         [ObservableProperty] private bool editBtnIsVisible = false;
 
-        private DatabaseService tourService;
+        private readonly IUserService _userService;
 
+        private readonly ITourService _tourService;
 
-        public MainMenuViewModel(DatabaseService tourService)
+        public MainMenuViewModel(IUserService userService, ITourService tourService)
         {
-            this.tourService = tourService;
-            if (App.User.Email.Equals("admin@admin.com"))
+            _tourService = tourService;
+            _userService = userService;
+            if (App.CurrentUser.Email.Equals("admin@admin.com"))
             {
                 EditBtnIsVisible = true;
             }
@@ -37,7 +42,7 @@ namespace TravelAgencyApp.ViewModels
 
                 IsBusy = true;
 
-                var tours = await tourService.GetToursAsync();
+                var tours = await _tourService.GetAllAsync();
 
                 if (Tours.Count != 0)
                     Tours.Clear();

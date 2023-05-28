@@ -28,8 +28,8 @@
         <member name="P:TravelAgencyApp.ViewModels.BasketViewModel.BuyCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.BasketViewModel.Buy"/>.</summary>
         </member>
-        <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.Tour">
-            <inheritdoc cref="F:TravelAgencyApp.ViewModels.DetailTourViewModel.tour"/>
+        <member name="P:TravelAgencyApp.ViewModels.DetailTourViewModel.CurrentTour">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.DetailTourViewModel.currentTour"/>
         </member>
         <member name="F:TravelAgencyApp.ViewModels.DetailTourViewModel.tourToBasketCommand">
             <summary>The backing field for <see cref="P:TravelAgencyApp.ViewModels.DetailTourViewModel.TourToBasketCommand"/>.</summary>
@@ -145,8 +145,8 @@
         <member name="P:TravelAgencyApp.ViewModels.RegisterViewModel.RegisterUserCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TravelAgencyApp.ViewModels.RegisterViewModel.RegisterUser(System.Object)"/>.</summary>
         </member>
-        <member name="P:TravelAgencyApp.ViewModels.SettingTourViewModel.Tour">
-            <inheritdoc cref="F:TravelAgencyApp.ViewModels.SettingTourViewModel.tour"/>
+        <member name="P:TravelAgencyApp.ViewModels.SettingTourViewModel.CurrentTour">
+            <inheritdoc cref="F:TravelAgencyApp.ViewModels.SettingTourViewModel.currentTour"/>
         </member>
         <member name="P:TravelAgencyApp.ViewModels.SettingTourViewModel.Name">
             <inheritdoc cref="F:TravelAgencyApp.ViewModels.SettingTourViewModel.name"/>

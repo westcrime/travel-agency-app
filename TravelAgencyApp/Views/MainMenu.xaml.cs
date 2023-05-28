@@ -15,10 +15,12 @@ public partial class MainMenu : ContentPage
 
     protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
-        base.OnNavigatedTo(args);
-        await Task.Delay(250);
-        await viewModel.GetToursAsync();
-
+        if (App.NeedToRefresh)
+        {
+            base.OnNavigatedTo(args);
+            await viewModel.GetToursAsync();
+            App.NeedToRefresh = false;
+        }
     }
 
     private async void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
@@ -29,7 +31,7 @@ public partial class MainMenu : ContentPage
             viewModel.IsBusy = true;
             await Shell.Current.GoToAsync(nameof(DetailTourView), true, new Dictionary<string, object>
             {
-                { "Tour", tour }
+                { "CurrentTour", tour }
             });
             viewModel.IsBusy = false;
         }

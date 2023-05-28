@@ -1,35 +1,39 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using TravelAgencyApp.Application.Abstractions;
 using TravelAgencyApp.Models;
 using TravelAgencyApp.Services;
 
 namespace TravelAgencyApp.ViewModels
 {
-    [QueryProperty(nameof(Tour), "Tour")]
+    [QueryProperty("CurrentTour", "CurrentTour")]
     public partial class DetailTourViewModel : BaseViewModel
     {
         [ObservableProperty]
-        private Tour tour;
+        private Tour currentTour;
 
-        private DatabaseService databaseService;
+        private readonly IUserService _userService;
 
-        public DetailTourViewModel(DatabaseService databaseService)
+        private readonly ITourService _tourService;
+
+        public DetailTourViewModel(IUserService userService, ITourService tourService)
         {
-            this.databaseService = databaseService;
+            _tourService = tourService;
+            _userService = userService;
         }
 
         [RelayCommand]
         private async void TourToBasket()
         {
-            foreach (var tour in App.User.ReservationBook)
+            foreach (var tour in App.CurrentUser.ReservationBook)
             {
-                if (tour == this.Tour.Id)
+                if (tour == CurrentTour.Id)
                 {
                     return;
                 }
             }
-            App.User.ReservationBook.Add(this.Tour.Id);
-            this.databaseService.AddUserAsync(App.User);
+            App.CurrentUser.ReservationBook.Add(CurrentTour.Id);
+            await _userService.AddAsync(App.CurrentUser);
             await App.Current.MainPage.DisplayAlert("Success!", "Tour added to your basket.", "OK");
         }
     }

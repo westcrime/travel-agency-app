@@ -15,16 +15,16 @@
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="20" BackgroundColor="{StaticResource Secondary}"></RoundRectangle>
                     </Border.StrokeShape>
-                    <Image Source="{Binding Tour.Picture}" Aspect="Fill"/>
+                    <Image Source="{Binding CurrentTour.Picture}" Aspect="Fill"/>
                 </Border>
             </StackLayout>
 
             <StackLayout Grid.Row="1" HeightRequest="375">
                 <Grid>
                     <Grid RowDefinitions="Auto,Auto,Auto,Auto" Padding="20,45,20,0" RowSpacing="20" >
-                        <Label Grid.Row="1" Text="{Binding Tour.Name}" FontSize="30" FontAttributes="Bold" TextColor="Black"/>
-                        <Label Grid.Row="2" Text="{Binding Tour.Description}" FontSize="15" TextColor="Black"/>
-                        <Label Grid.Row="3" Text="{Binding Tour.Price}" FontSize="25" Padding="0,15" TextColor="{StaticResource Primary}" FontAttributes="Bold"/>
+                        <Label Grid.Row="1" Text="{Binding CurrentTour.Name}" FontSize="30" FontAttributes="Bold" TextColor="Black"/>
+                        <Label Grid.Row="2" Text="{Binding CurrentTour.Description}" MaxLines="7" FontSize="15" TextColor="Black"/>
+                        <Label Grid.Row="3" Text="{Binding CurrentTour.Price}" FontSize="25" Padding="0,15" TextColor="{StaticResource Primary}" FontAttributes="Bold"/>
                     </Grid>
                 </Grid>
             </StackLayout>

@@ -2,6 +2,7 @@
 using System.Diagnostics.Metrics;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using TravelAgencyApp.Application.Abstractions;
 using TravelAgencyApp.Models;
 using TravelAgencyApp.Services;
 
@@ -18,11 +19,14 @@ namespace TravelAgencyApp.ViewModels
         [ObservableProperty]
         public string balance;
 
-        private DatabaseService databaseService;
+        private readonly IUserService _userService;
 
-        public BasketViewModel(DatabaseService databaseService)
+        private readonly ITourService _tourService;
+
+        public BasketViewModel(IUserService userService, ITourService tourService)
         {
-            this.databaseService = databaseService;
+            _tourService = tourService;
+            _userService = userService;
             Cost = "0$";
             Balance = "0$";
             Tours = new ObservableCollection<Tour>();
@@ -39,16 +43,15 @@ namespace TravelAgencyApp.ViewModels
 
                 if (Tours.Count != 0)
                     Tours.Clear();
-
-                foreach (var tour in App.User.ReservationBook)
+                foreach (var tour in App.CurrentUser.ReservationBook)
                 {
-                    Tours.Add(await this.databaseService.GetTourAsync(tour));
+                    Tours.Add(await _tourService.GetAsync(tour));
                 }
 
                 if (Tours == null)
                     return;
 
-                Balance = App.User.Balance.ToString() + '$';
+                Balance = App.CurrentUser.Balance.ToString() + '$';
 
                 double _cost = 0;
 
@@ -73,11 +76,11 @@ namespace TravelAgencyApp.ViewModels
         {
             IsBusy = true;
             Tours.Remove(obj);
-            App.User.ReservationBook.Remove(obj.Id);
+            App.CurrentUser.ReservationBook.Remove(obj.Id);
             string cost = Cost.Remove(Cost.Length - 1);
             double newCost = Convert.ToDouble(cost) - Convert.ToDouble(obj.Price.Remove(obj.Price.Length - 1));
             Cost = newCost.ToString() + '$';
-            await databaseService.AddUserAsync(App.User);
+            await _userService.AddAsync(App.CurrentUser);
             IsBusy = false;
         }
 
@@ -92,14 +95,16 @@ namespace TravelAgencyApp.ViewModels
             }
             else
             {
+                string userId = (await _userService.AuthProvider.GetUserAsync(Preferences.Get("AuthToken", "No token"))).LocalId;
+                var user = await _userService.GetAsync(userId);
                 await Task.Run(() =>
                 {
                     Tours.Clear();
-                    App.User.ReservationBook.Clear();
-                    App.User.Balance -= cost;
-                    Balance = App.User.Balance.ToString() + '$';
+                    user.ReservationBook.Clear();
+                    user.Balance -= cost;
+                    Balance = user.Balance.ToString() + '$';
                 });
-                await databaseService.AddUserAsync(App.User);
+                await _userService.AddAsync(user);
                 await App.Current.MainPage.DisplayAlert("Success!", "You have bought tour(s)!", "OK");
                 Cost = "0$";
             }

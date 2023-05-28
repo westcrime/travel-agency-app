@@ -5,15 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.Input;
+using TravelAgencyApp.Application.Abstractions;
 using TravelAgencyApp.Models;
 using TravelAgencyApp.Services;
+using TravelAgencyApp.Views;
 
 namespace TravelAgencyApp.ViewModels
 {
-    [QueryProperty(nameof(Tour), "Tour")]
+    [QueryProperty(nameof(Tour), "CurrentTour")]
     public partial class SettingTourViewModel : BaseViewModel
     {
-        [ObservableProperty] private Tour tour;
+        [ObservableProperty] private Tour currentTour;
 
         [ObservableProperty] private string name;
 
@@ -23,11 +25,14 @@ namespace TravelAgencyApp.ViewModels
 
         [ObservableProperty] private string picture;
 
-        private DatabaseService databaseService;
+        private readonly IUserService _userService;
 
-        public SettingTourViewModel(DatabaseService databaseService)
+        private readonly ITourService _tourService;
+
+        public SettingTourViewModel(IUserService userService, ITourService tourService)
         {
-            this.databaseService = databaseService;
+            _tourService = tourService;
+            _userService = userService;
         }
 
         [RelayCommand]
@@ -39,14 +44,16 @@ namespace TravelAgencyApp.ViewModels
                 if (Name != string.Empty || Price != string.Empty || Description != string.Empty ||
                     Picture != string.Empty)
                 {
-                    if (Tour != null)
+                    if (CurrentTour != null)
                     {
-                        await ChangeTour(Tour, Name, Description, Price, Picture);
+                        await ChangeTour(CurrentTour, Name, Description, Price, Picture);
                     }
                     else
                     {
                         await AddTour(new Models.Tour(Name, Price, Description, Picture));
                     }
+
+                    await Shell.Current.GoToAsync("..", true);
                 }
             }
             catch (Exception e)
@@ -62,7 +69,7 @@ namespace TravelAgencyApp.ViewModels
 
         private async Task AddTour(Tour tourForAdding)
         {
-            await databaseService.AddTourAsync(tourForAdding);
+            await _tourService.AddAsync(tourForAdding);
         }
 
         private async Task ChangeTour(Tour tourForChanging, string name, string description, string price, string picture)
@@ -71,8 +78,8 @@ namespace TravelAgencyApp.ViewModels
             tourForChanging.Description = description;
             tourForChanging.Price = price;
             tourForChanging.Picture = picture;
-            await databaseService.RemoveTourAsync(tourForChanging);
-            await databaseService.AddTourAsync(tourForChanging);
+            await _tourService.DeleteAsync(tourForChanging);
+            await _tourService.AddAsync(tourForChanging);
         }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using TravelAgencyApp.Application.Abstractions;
+using TravelAgencyApp.Application.Services;
 using TravelAgencyApp.Services;
 using TravelAgencyApp.Views;
 
@@ -13,12 +15,16 @@ namespace TravelAgencyApp.ViewModels
         [ObservableProperty]
         private string userPassword;
 
-        private DatabaseService databaseService;
+        private readonly IUserService _userService;
 
-        public RegisterViewModel(DatabaseService databaseService) 
+        private readonly ITourService _tourService;
+
+        public RegisterViewModel(IUserService userService, ITourService tourService)
         {
-            this.databaseService = databaseService;
+            _tourService = tourService;
+            _userService = userService;
         }
+
         [RelayCommand]
         private async void BackToLogin(object obj)
         {
@@ -37,18 +43,18 @@ namespace TravelAgencyApp.ViewModels
             try
             {
                 IsBusy = true;
-                var auth = await App.authProvider.CreateUserWithEmailAndPasswordAsync(UserEmail, UserPassword);
-                string token = auth.FirebaseToken;
-                if (token != null)
+                var auth = await _userService.AuthProvider.CreateUserWithEmailAndPasswordAsync(UserEmail, UserPassword);
+                Preferences.Set("AuthToken", auth.FirebaseToken);
+                if (!string.IsNullOrEmpty(auth.FirebaseToken))
                     await App.Current.MainPage.DisplayAlert("Success!", "User Registered successfully", "OK");
-                var auth1 = await App.authProvider.SignInWithEmailAndPasswordAsync(UserEmail, UserPassword);
-                App.Token = auth1.FirebaseToken;
-                App.User = new Models.User()
+                var auth1 = await _userService.AuthProvider.SignInWithEmailAndPasswordAsync(UserEmail, UserPassword);
+                var user = new Models.User()
                 {
                     Id = auth1.User.LocalId,
                     Email = UserEmail
                 };
-                await this.databaseService.AddUserAsync(App.User);
+                await _userService.AddAsync(user);
+                App.CurrentUser = user;
                 await Shell.Current.GoToAsync($"//{nameof(MainMenu)}", true);
             }
             catch (Exception ex)

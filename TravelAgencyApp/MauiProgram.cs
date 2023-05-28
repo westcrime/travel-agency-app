@@ -1,6 +1,11 @@
 ﻿using Acr.UserDialogs;
 using CommunityToolkit.Maui;
+using Firebase.Auth;
 using Microsoft.Extensions.DependencyInjection;
+using TravelAgencyApp.Abstractions;
+using TravelAgencyApp.Application.Abstractions;
+using TravelAgencyApp.Application.Services;
+using TravelAgencyApp.Persistence.Repositories;
 using TravelAgencyApp.Services;
 using TravelAgencyApp.ViewModels;
 using TravelAgencyApp.Views;
@@ -41,6 +46,9 @@ public static class MauiProgram
         builder.Services.AddTransient<ProfileViewModel>();
 
         builder.Services.AddSingleton<DatabaseService>();
+        builder.Services.AddSingleton<IUnitOfWork, UnitOfWork>();
+        builder.Services.AddSingleton<IUserService, UserService>();
+        builder.Services.AddSingleton<ITourService, TourService>();
         return builder.Build();
 	}
 }
