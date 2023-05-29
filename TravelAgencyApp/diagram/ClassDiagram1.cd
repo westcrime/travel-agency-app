@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TravelAgencyApp.Application.Services.TourService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAgAAAAEAAAAAAAAAAAAAIAAAAIA=</HashCode>
+      <FileName>Application\Services\TourService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TravelAgencyApp.Application.Services.UserService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAgAAAAEAAAAACAAAAAAAIAAAAIA=</HashCode>
+      <FileName>Application\Services\UserService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.6" Collapsed="true" />
+  </Class>
+  <Class Name="TravelAgencyApp.Exceptions.NoInternetException" Collapsed="true">
+    <Position X="28.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Exceptions\NoInternetException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Models.Entity" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Models.Icons" Collapsed="true">
+    <Position X="23" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACACAAAAgAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\Icons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Models.Tour" Collapsed="true">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAQAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\Tour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Models.User" Collapsed="true">
+    <Position X="6.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAAAAAAAAhAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Services.DatabaseService" Collapsed="true">
+    <Position X="26.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Persistence\DataServices\DatabaseService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Persistence.Repositories.Repository&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQEAAAAAAAAEAAAAAAAAAAAAAIAAAAIA=</HashCode>
+      <FileName>Persistence\Repositories\Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TravelAgencyApp.Persistence.Repositories.UnitOfWork" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAgAAIAAECAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Persistence\Repositories\UnitOfWork.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TravelAgencyApp.MainActivity" Collapsed="true">
+    <Position X="26.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Platforms\Android\MainActivity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.MainApplication" Collapsed="true">
+    <Position X="28.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Platforms\Android\MainApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.App" Collapsed="true">
+    <Position X="23" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.MauiProgram" Collapsed="true">
+    <Position X="23" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MauiProgram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.ViewModels.BaseViewModel" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.ViewModels.BasketViewModel" Collapsed="true">
+    <Position X="18.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAIAIAAAAAAAAAIAAAQAAAAAQAEAAAgAAA=</HashCode>
+      <FileName>ViewModels\BasketViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.ViewModels.DetailTourViewModel" Collapsed="true">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIABAAAAAAAAAAAAAAAAAAABAEAAAAAAA=</HashCode>
+      <FileName>ViewModels\DetailTourViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.ViewModels.EditToursViewModel" Collapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIBAIAIAAAAAAAAAAAAAAAAABAQAEAAAgAAA=</HashCode>
+      <FileName>ViewModels\EditToursViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.ViewModels.LoginViewModel" Collapsed="true">
+    <Position X="11.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAIAAAAAAAAAAAAAAABAAAAAAAUAAAAAAg=</HashCode>
+      <FileName>ViewModels\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.ViewModels.MainMenuViewModel" Collapsed="true">
+    <Position X="13.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAIAAgIAAAAAAAAAAAAAAAAAAAEAAEgAQA=</HashCode>
+      <FileName>ViewModels\MainMenuViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.ViewModels.MenuShellViewModel" Collapsed="true">
+    <Position X="26.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MenuShellViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.ViewModels.ProfileViewModel" Collapsed="true">
+    <Position X="16" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAAAAIgAAAAgAAGAAIAAAAAAAAAAAEAAAAAAg=</HashCode>
+      <FileName>ViewModels\ProfileViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.ViewModels.RegisterViewModel" Collapsed="true">
+    <Position X="20.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgAAAAAAAAAIAAAAAAAAAAAAAAAEAAAAAAAEAAAAAAg=</HashCode>
+      <FileName>ViewModels\RegisterViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.ViewModels.SettingTourViewModel" Collapsed="true">
+    <Position X="7" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABAAAAAIAYAAAAIAAAAAAAAAAEAAABABAEAAAAAAA=</HashCode>
+      <FileName>ViewModels\SettingTourViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Views.BasketView" Collapsed="true">
+    <Position X="24.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\BasketView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Views.DetailTourView" Collapsed="true">
+    <Position X="28.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\DetailTourView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Views.EditToursView" Collapsed="true">
+    <Position X="30" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\EditToursView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Views.LoginView" Collapsed="true">
+    <Position X="24.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\LoginView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Views.MainMenu" Collapsed="true">
+    <Position X="30" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Views\MainMenu.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Views.MenuShell" Collapsed="true">
+    <Position X="24.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\MenuShell.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Views.ProfileView" Collapsed="true">
+    <Position X="30" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ProfileView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Views.RegisterPageView" Collapsed="true">
+    <Position X="23" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\RegisterPageView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgencyApp.Views.SettingTourView" Collapsed="true">
+    <Position X="26.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\SettingTourView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="TravelAgencyApp.Application.Abstractions.IBaseService&lt;T&gt;" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAIAAAAIA=</HashCode>
+      <FileName>Application\Abstractions\IBaseService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TravelAgencyApp.Application.Abstractions.ITourService" Collapsed="true">
+    <Position X="9" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\Abstractions\ITourService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TravelAgencyApp.Application.Abstractions.IUserService" Collapsed="true">
+    <Position X="11.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\Abstractions\IUserService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TravelAgencyApp.Abstractions.IRepository&lt;T&gt;" Collapsed="true">
+    <Position X="23" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAEAAAAAAAAAAAAAIAAAAIA=</HashCode>
+      <FileName>Domain\Abstractions\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TravelAgencyApp.Abstractions.IUnitOfWork" Collapsed="true">
+    <Position X="24.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Domain\Abstractions\IUnitOfWork.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -16,7 +16,6 @@ public partial class ProfileView : ContentPage
     protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
         base.OnNavigatedTo(args);
-        await Task.Delay(250);
         await this.profileViewModel.Update();
     }
 

@@ -95,16 +95,14 @@ namespace TravelAgencyApp.ViewModels
             }
             else
             {
-                string userId = (await _userService.AuthProvider.GetUserAsync(Preferences.Get("AuthToken", "No token"))).LocalId;
-                var user = await _userService.GetAsync(userId);
                 await Task.Run(() =>
                 {
                     Tours.Clear();
-                    user.ReservationBook.Clear();
-                    user.Balance -= cost;
-                    Balance = user.Balance.ToString() + '$';
+                    App.CurrentUser.ReservationBook.Clear();
+                    App.CurrentUser.Balance -= cost;
+                    Balance = App.CurrentUser.Balance.ToString() + '$';
                 });
-                await _userService.AddAsync(user);
+                await _userService.AddAsync(App.CurrentUser);
                 await App.Current.MainPage.DisplayAlert("Success!", "You have bought tour(s)!", "OK");
                 Cost = "0$";
             }
